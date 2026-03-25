@@ -23,6 +23,8 @@ a{color:var(--accent);text-decoration:none}
 .app-header{background:var(--surface);padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-shrink:0}
 .app-header h1{font-size:16px;font-weight:600}
 .app-header .stats{margin-right:auto;font-size:13px;color:var(--text2)}
+.reload-btn{padding:4px 10px;background:var(--border);color:var(--text);border:none;border-radius:4px;cursor:pointer;font-size:12px;font-family:inherit}
+.reload-btn:hover{background:var(--accent)}
 
 /* Tabs */
 .tabs{display:flex;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0;overflow-x:auto}
@@ -60,7 +62,7 @@ a{color:var(--accent);text-decoration:none}
 .link-btn.google{background:var(--google)}
 .link-btn.whatsapp{background:var(--whatsapp)}
 .link-btn.other{background:var(--text2)}
-.link-warn{font-size:12px;color:var(--yellow);padding:4px 8px;background:rgba(210,153,34,.15);border-radius:4px}
+.link-warn{font-size:12px;color:var(--yellow);padding:4px 8px;background:rgba(210,153,34,.15);border-radius:4px;display:inline-block}
 
 /* WhatsApp add */
 .wa-add{display:flex;gap:6px;margin-bottom:8px}
@@ -84,6 +86,12 @@ a{color:var(--accent);text-decoration:none}
 /* Save indicator */
 .save-indicator{position:fixed;bottom:20px;left:20px;background:var(--green);color:#fff;padding:6px 16px;border-radius:20px;font-size:13px;opacity:0;transition:opacity .3s;z-index:999;pointer-events:none}
 .save-indicator.show{opacity:1}
+
+/* Loading */
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;height:200px;color:var(--text2);gap:12px}
+.loading .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.data-source{font-size:11px;color:var(--text2);padding:2px 6px;background:var(--bg);border-radius:3px}
 
 /* Right panel */
 .iframe-header{background:var(--surface);padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-shrink:0}
@@ -124,16 +132,18 @@ a{color:var(--accent);text-decoration:none}
   <!-- LEFT PANEL -->
   <div class="panel-left">
     <div class="app-header">
-      <h1>📋 مصحح المشاريع</h1>
+      <h1>مصحح المشاريع</h1>
+      <span class="data-source" id="dataSource"></span>
       <span class="stats" id="globalStats"></span>
+      <button class="reload-btn" onclick="init()" title="تحديث البيانات">تحديث</button>
     </div>
     <div class="tabs" id="tabsContainer"></div>
     <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="🔍 بحث بالاسم...">
+      <input type="text" id="searchInput" placeholder="بحث بالاسم...">
     </div>
     <div class="student-list" id="studentList"></div>
     <div class="export-bar">
-      <button class="export-btn" onclick="exportCSV()">📥 تصدير CSV</button>
+      <button class="export-btn" onclick="exportCSV()">تصدير CSV</button>
       <span style="font-size:12px;color:var(--text2)" id="exportInfo"></span>
     </div>
   </div>
@@ -142,17 +152,17 @@ a{color:var(--accent);text-decoration:none}
   <div class="panel-right">
     <div class="iframe-header">
       <span class="student-name" id="currentStudent">اضغط على رابط لعرض المشروع</span>
-      <button class="open-btn" id="openNewTab" onclick="openInNewTab()" style="display:none">🔗 فتح في تاب جديد</button>
+      <button class="open-btn" id="openNewTab" onclick="openInNewTab()" style="display:none">فتح في تاب جديد</button>
     </div>
     <div class="iframe-container" id="iframeContainer">
       <div class="iframe-placeholder" id="iframePlaceholder">
         <div class="icon">📂</div>
-        <p>اختر طالبة واضغط على رابط المشروع لعرضه هنا</p>
+        <p>اختاري طالبة واضغطي على رابط المشروع لعرضه هنا</p>
       </div>
       <div class="iframe-blocked" id="iframeBlocked">
         <div class="warn-icon">⚠️</div>
         <p>هذا الموقع لا يسمح بالعرض المدمج (iframe)</p>
-        <button class="open-big-btn" onclick="openInNewTab()">🔗 افتح الرابط في تاب جديد</button>
+        <button class="open-big-btn" onclick="openInNewTab()">افتح الرابط في تاب جديد</button>
       </div>
       <iframe id="projectFrame" style="display:none" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
     </div>
@@ -162,58 +172,179 @@ a{color:var(--accent);text-decoration:none}
 <div class="save-indicator" id="saveIndicator">✓ محفوظ</div>
 
 <script>
-// ---- State ----
+// ==== CONFIG ====
+const SHEET_ID = '1Cx8ZSkWou6dinH6xqUr3AeepzlW2jOgQ9Q2oK0_iSuI';
+const SHEET_CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv`;
+
+// Column mapping (0-indexed) per grade
+// A=0 Timestamp, B=1 Name, C=2 Grade
+// Each grade section: Division, Link1, Link2, Notes
+const GRADE_COLS = {
+  'الصف السابع':  { div: 3,  links: [4, 5],   notes: 6,  linkLabels: ['وثيقة','فيديو'] },
+  'الصف الثامن':  { div: 7,  links: [8, 9],   notes: 10, linkLabels: ['كتاب إلكتروني','استبانة'] },
+  'الصف التاسع':  { div: 11, links: [12, 13],  notes: 14, linkLabels: ['سيناريو','فيديو'] },
+  'الصف العاشر':  { div: 15, links: [16, 17],  notes: 18, linkLabels: ['خطة مشروع','بروشور'] }
+};
+
+const GRADE_SHORT = {
+  'الصف السابع': 'سابع',
+  'الصف الثامن': 'ثامن',
+  'الصف التاسع': 'تاسع',
+  'الصف العاشر': 'عاشر'
+};
+
+// ==== STATE ====
 let students = [];
 let grades = {};
 let waLinks = {};
 let currentGrade = '';
 let currentUrl = '';
 
-const STORAGE_KEY = 'grader_grades';
-const WA_STORAGE_KEY = 'grader_wa_links';
+const STORAGE_KEY = 'grader_grades_v2';
+const WA_STORAGE_KEY = 'grader_wa_links_v2';
 
-// ---- Load Data ----
-async function init() {
-  try {
-    const resp = await fetch('data.json');
-    students = await resp.json();
-  } catch(e) {
-    document.getElementById('studentList').innerHTML = '<p style="padding:20px;color:var(--red)">خطأ في تحميل data.json</p>';
-    return;
+// ==== CSV PARSER ====
+function parseCSV(text) {
+  const rows = [];
+  let current = '';
+  let inQuotes = false;
+  let row = [];
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"') {
+        if (text[i+1] === '"') { current += '"'; i++; }
+        else { inQuotes = false; }
+      } else {
+        current += ch;
+      }
+    } else {
+      if (ch === '"') { inQuotes = true; }
+      else if (ch === ',') { row.push(current); current = ''; }
+      else if (ch === '\n' || (ch === '\r' && text[i+1] === '\n')) {
+        row.push(current); current = '';
+        if (row.length > 1 || row[0] !== '') rows.push(row);
+        row = [];
+        if (ch === '\r') i++;
+      } else {
+        current += ch;
+      }
+    }
+  }
+  if (current || row.length) { row.push(current); rows.push(row); }
+  return rows;
+}
+
+// ==== DATA LOADING ====
+async function loadFromSheet() {
+  const resp = await fetch(SHEET_CSV_URL);
+  if (!resp.ok) throw new Error('Sheet fetch failed: ' + resp.status);
+  const text = await resp.text();
+  const rows = parseCSV(text);
+  if (rows.length < 2) throw new Error('No data rows');
+  return csvToStudents(rows.slice(1)); // skip header
+}
+
+async function loadFromJSON() {
+  const resp = await fetch('data.json');
+  if (!resp.ok) throw new Error('data.json fetch failed');
+  return await resp.json();
+}
+
+function csvToStudents(rows) {
+  // Build map: name+grade → latest row (by timestamp)
+  const map = new Map();
+
+  for (const cols of rows) {
+    const name = (cols[1] || '').trim();
+    const gradeRaw = (cols[2] || '').trim();
+    if (!name || !gradeRaw) continue;
+
+    const gradeCfg = GRADE_COLS[gradeRaw];
+    if (!gradeCfg) continue;
+
+    const grade = GRADE_SHORT[gradeRaw] || gradeRaw;
+    const key = grade + '|' + name;
+    const timestamp = cols[0] || '';
+
+    // Keep latest submission
+    if (map.has(key) && map.get(key).timestamp > timestamp) continue;
+
+    const division = (cols[gradeCfg.div] || '').trim();
+    const links = gradeCfg.links
+      .map(i => (cols[i] || '').trim())
+      .filter(Boolean);
+    const notes = (cols[gradeCfg.notes] || '').trim();
+
+    // Deduplicate links
+    const uniqueLinks = [...new Set(links)];
+
+    map.set(key, {
+      id: key,
+      name: name,
+      grade: grade,
+      division: division,
+      links: uniqueLinks,
+      linkLabels: gradeCfg.linkLabels,
+      notes: notes,
+      timestamp: timestamp
+    });
   }
 
-  // Clean data
-  students.forEach(s => {
-    s.links = (s.links || []).map(l => typeof l === 'string' ? l.trim() : '').filter(Boolean);
-    // Deduplicate
-    s.links = [...new Set(s.links)];
-  });
+  return Array.from(map.values());
+}
 
-  // Load saved grades
+// ==== INIT ====
+async function init() {
+  const list = document.getElementById('studentList');
+  list.innerHTML = '<div class="loading"><div class="spinner"></div><span>جاري تحميل البيانات...</span></div>';
+
+  // Load saved state
   try { grades = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { grades = {}; }
   try { waLinks = JSON.parse(localStorage.getItem(WA_STORAGE_KEY)) || {}; } catch(e) { waLinks = {}; }
 
+  let source = '';
+  try {
+    students = await loadFromSheet();
+    source = 'Google Sheet (مباشر)';
+  } catch(e) {
+    console.warn('Sheet load failed, trying data.json:', e);
+    try {
+      students = await loadFromJSON();
+      source = 'data.json (محلي)';
+    } catch(e2) {
+      list.innerHTML = '<p style="padding:20px;color:var(--red)">خطأ في تحميل البيانات. تأكدي من الاتصال بالإنترنت أو وجود ملف data.json</p>';
+      return;
+    }
+  }
+
+  // Clean links
+  students.forEach(s => {
+    s.links = (s.links || []).map(l => typeof l === 'string' ? l.trim() : '').filter(Boolean);
+    s.links = [...new Set(s.links)];
+    if (!s.linkLabels) s.linkLabels = ['رابط 1','رابط 2'];
+  });
+
+  document.getElementById('dataSource').textContent = source;
+  currentGrade = '';
   buildTabs();
   renderList();
   updateStats();
 }
 
-// ---- Sites that block iframes ----
-const BLOCKED_DOMAINS = ['canva.com', 'youtube.com', 'youtu.be', 'facebook.com', 'instagram.com', 'tiktok.com'];
-
+// ==== BLOCKED DOMAINS ====
+const BLOCKED_DOMAINS = ['canva.com','youtube.com','youtu.be','facebook.com','instagram.com','tiktok.com'];
 function isBlockedDomain(url) {
-  try {
-    const host = new URL(url).hostname.toLowerCase();
-    return BLOCKED_DOMAINS.some(d => host.includes(d));
-  } catch(e) { return false; }
+  try { return BLOCKED_DOMAINS.some(d => new URL(url).hostname.toLowerCase().includes(d)); }
+  catch(e) { return false; }
 }
 
-// ---- Tabs ----
+// ==== TABS ====
 function buildTabs() {
   const gradeOrder = ['سابع','ثامن','تاسع','عاشر'];
   const container = document.getElementById('tabsContainer');
   const available = [...new Set(students.map(s => s.grade))];
-  // Sort by order
   available.sort((a,b) => gradeOrder.indexOf(a) - gradeOrder.indexOf(b));
 
   container.innerHTML = available.map(g => {
@@ -226,7 +357,8 @@ function buildTabs() {
 
   if (!currentGrade && available.length) {
     currentGrade = available[0];
-    container.querySelector('.tab').classList.add('active');
+    const first = container.querySelector('.tab');
+    if (first) first.classList.add('active');
   }
 }
 
@@ -242,10 +374,10 @@ function isGraded(s) {
   return g && (g.doc !== undefined || g.video !== undefined || g.pub !== undefined);
 }
 
-// ---- Search ----
+// ==== SEARCH ====
 document.getElementById('searchInput').addEventListener('input', () => renderList());
 
-// ---- Render Student List ----
+// ==== RENDER LIST ====
 function renderList() {
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
   const list = document.getElementById('studentList');
@@ -255,7 +387,6 @@ function renderList() {
     filtered = students.filter(s => s.name.toLowerCase().includes(query));
   }
 
-  // Sort: ungraded first, then by name
   filtered.sort((a,b) => {
     const ag = isGraded(a) ? 1 : 0;
     const bg = isGraded(b) ? 1 : 0;
@@ -263,7 +394,13 @@ function renderList() {
     return a.name.localeCompare(b.name, 'ar');
   });
 
-  list.innerHTML = filtered.map(s => renderCard(s)).join('');
+  list.innerHTML = filtered.length
+    ? filtered.map(s => renderCard(s)).join('')
+    : '<p style="padding:20px;color:var(--text2);text-align:center">لا توجد نتائج</p>';
+}
+
+function esc(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 
 function renderCard(s) {
@@ -275,33 +412,37 @@ function renderCard(s) {
   const hasGrade = doc !== '' || video !== '' || pub !== '';
   const totalClass = hasGrade ? (total >= 16 ? 'total-green' : total >= 10 ? 'total-yellow' : 'total-red') : '';
 
-  // Get all links including WA
   const allLinks = [...s.links];
   const extraLinks = waLinks[s.id] || [];
   extraLinks.forEach(l => { if (!allLinks.includes(l)) allLinks.push(l); });
 
+  const labels = s.linkLabels || [];
+
   const linksHTML = allLinks.map((link, i) => {
     if (!isValidUrl(link)) {
-      return `<span class="link-warn">⚠️ "${link}" — ليس رابطاً صالحاً</span>`;
+      return `<span class="link-warn">⚠️ "${esc(link)}" — ليس رابطاً صالحاً</span>`;
     }
     const type = getLinkType(link);
-    const extra = extraLinks.includes(link) ? ' whatsapp' : '';
-    const cls = extra || (' ' + type);
-    const label = type === 'canva' ? 'Canva' : type === 'youtube' ? 'YouTube' : type === 'google' ? 'Google' : 'رابط';
-    const idx = extraLinks.includes(link) ? '💬 ' : '';
-    return `<button class="link-btn${cls}" onclick="loadProject('${s.id}','${encodeURIComponent(link)}','${s.name}')" title="${link}">${idx}${label} ${i+1}</button>`;
+    const isExtra = extraLinks.includes(link) && !s.links.includes(link);
+    const cls = isExtra ? ' whatsapp' : (' ' + type);
+    const label = isExtra ? '💬 واتساب' : (labels[i] || getLinkLabel(link));
+    const escapedId = esc(s.id);
+    const escapedName = esc(s.name);
+    return `<button class="link-btn${cls}" onclick="loadProject('${escapedId}','${encodeURIComponent(link)}','${escapedName}')" title="${esc(link)}">${label}</button>`;
   }).join('');
+
+  const escapedId = esc(s.id);
 
   return `<div class="card" id="card-${CSS.escape(s.id)}">
     <div class="card-header">
-      <span class="card-name">${s.name}</span>
-      <span class="card-div">${s.division || ''}</span>
+      <span class="card-name">${esc(s.name)}</span>
+      <span class="card-div">${esc(s.division || '')}</span>
       <span class="card-total ${totalClass}">${hasGrade ? total + '/20' : '—'}</span>
     </div>
     <div class="links-row">${linksHTML || '<span style="color:var(--text2);font-size:13px">لا يوجد روابط</span>'}</div>
     <div class="wa-add">
       <input type="text" placeholder="لصق رابط واتساب..." id="wa-${CSS.escape(s.id)}" dir="ltr">
-      <button onclick="addWaLink('${s.id}')">+ إضافة</button>
+      <button onclick="addWaLink('${escapedId}')">+ إضافة</button>
     </div>
     <div class="grade-section">
       <div class="grade-label">📄 وثيقة (0–7)</div>
@@ -315,21 +456,22 @@ function renderCard(s) {
       <div class="grade-label">📸 سكرين شوت النشر (0–6)</div>
       <div class="grade-btns">${renderGradeBtns(s.id, 'pub', 6, pub)}</div>
     </div>
-    <button class="broken-btn" onclick="setBroken('${s.id}')">🔴 رابط لا يعمل ← 7</button>
-    ${s.notes ? `<div class="card-notes">📝 ${s.notes}</div>` : ''}
+    <button class="broken-btn" onclick="setBroken('${escapedId}')">🔴 رابط لا يعمل ← 7</button>
+    ${s.notes ? `<div class="card-notes">📝 ${esc(s.notes)}</div>` : ''}
   </div>`;
 }
 
 function renderGradeBtns(id, field, max, current) {
   let html = '';
+  const escapedId = esc(id);
   for (let i = 0; i <= max; i++) {
     const sel = current === i ? ' selected' : '';
-    html += `<button class="grade-btn${sel}" onclick="setGrade('${id}','${field}',${i})">${i}</button>`;
+    html += `<button class="grade-btn${sel}" onclick="setGrade('${escapedId}','${field}',${i})">${i}</button>`;
   }
   return html;
 }
 
-// ---- Grading ----
+// ==== GRADING ====
 function setGrade(id, field, value) {
   if (!grades[id]) grades[id] = {};
   grades[id][field] = value;
@@ -358,7 +500,7 @@ function refreshCard(id) {
   }
 }
 
-// ---- WhatsApp Links ----
+// ==== WHATSAPP LINKS ====
 function addWaLink(id) {
   const input = document.getElementById('wa-' + CSS.escape(id));
   if (!input) return;
@@ -374,7 +516,7 @@ function addWaLink(id) {
   input.value = '';
 }
 
-// ---- Link Helpers ----
+// ==== LINK HELPERS ====
 function isValidUrl(str) {
   try { new URL(str); return true; } catch(e) { return false; }
 }
@@ -389,7 +531,15 @@ function getLinkType(url) {
   } catch(e) { return 'other'; }
 }
 
-// ---- iFrame ----
+function getLinkLabel(url) {
+  const type = getLinkType(url);
+  if (type === 'canva') return 'Canva';
+  if (type === 'youtube') return 'YouTube';
+  if (type === 'google') return 'Google';
+  return 'رابط';
+}
+
+// ==== IFRAME ====
 function loadProject(id, encodedUrl, name) {
   const url = decodeURIComponent(encodedUrl);
   currentUrl = url;
@@ -409,14 +559,6 @@ function loadProject(id, encodedUrl, name) {
     placeholder.style.display = 'none';
     frame.style.display = '';
     frame.src = url;
-
-    // Detect load failure after timeout
-    let loaded = false;
-    frame.onload = () => { loaded = true; };
-    setTimeout(() => {
-      // If frame loaded but content might be blocked, we can't detect from JS
-      // So we keep the open-in-new-tab button visible
-    }, 3000);
   }
 }
 
@@ -424,7 +566,7 @@ function openInNewTab() {
   if (currentUrl) window.open(currentUrl, '_blank');
 }
 
-// ---- Save ----
+// ==== SAVE ====
 function saveGrades() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(grades));
   showSaved();
@@ -436,11 +578,11 @@ function showSaved() {
   setTimeout(() => el.classList.remove('show'), 1000);
 }
 
-// ---- Stats ----
+// ==== STATS ====
 function updateStats() {
   const total = students.length;
   const done = students.filter(s => isGraded(s)).length;
-  document.getElementById('globalStats').textContent = `تم تقييم ${done} من ${total}`;
+  document.getElementById('globalStats').textContent = `تم ${done}/${total}`;
 
   const graded = students.filter(s => isGraded(s));
   const avg = graded.length ? (graded.reduce((sum,s) => {
@@ -450,7 +592,7 @@ function updateStats() {
   document.getElementById('exportInfo').textContent = `المعدل: ${avg}/20`;
 }
 
-// ---- Export CSV ----
+// ==== EXPORT CSV ====
 function exportCSV() {
   const BOM = '\uFEFF';
   const headers = ['الاسم','الصف','الشعبة','وثيقة/7','فيديو/7','نشر/6','المجموع/20','ملاحظة'];
@@ -473,7 +615,7 @@ function exportCSV() {
   URL.revokeObjectURL(url);
 }
 
-// ---- Init ----
+// ==== START ====
 init();
 </script>
 </body>
