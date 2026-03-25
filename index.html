@@ -117,12 +117,34 @@ a{color:var(--accent);text-decoration:none}
 .total-yellow{color:var(--yellow)}
 .total-red{color:var(--red)}
 
-/* Responsive */
+/* Mobile toggle button */
+.mobile-toggle{display:none;position:fixed;bottom:20px;right:20px;z-index:900;width:56px;height:56px;border-radius:50%;border:none;background:var(--accent);color:#fff;font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.4);font-family:inherit}
+.mobile-back{display:none;padding:6px 12px;background:var(--border);color:var(--text);border:none;border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit;margin-left:auto}
+
+/* Responsive — Mobile */
 @media(max-width:800px){
   .container{flex-direction:column}
-  .panel-left,.panel-right{width:100%;min-width:0}
-  .panel-left{height:50vh;border-left:none;border-bottom:1px solid var(--border)}
-  .panel-right{height:50vh}
+  .panel-left,.panel-right{width:100%;min-width:0;height:100vh;border-left:none}
+  .panel-right{display:none}
+  .panel-left{display:flex}
+  body.show-viewer .panel-left{display:none}
+  body.show-viewer .panel-right{display:flex}
+  .mobile-toggle{display:block}
+  .mobile-back{display:block}
+  /* Bigger touch targets */
+  .tab{padding:12px 16px;font-size:15px}
+  .grade-btn{min-width:42px;min-height:42px;font-size:15px}
+  .link-btn{padding:8px 14px;font-size:14px}
+  .broken-btn{padding:10px 16px;font-size:14px;width:100%}
+  .card{padding:14px}
+  .card-name{font-size:16px}
+  .card-total{font-size:20px}
+  .search-bar input{padding:10px 14px;font-size:15px}
+  .wa-add input{padding:8px 12px;font-size:14px}
+  .wa-add button{padding:8px 14px;font-size:14px}
+  .export-btn{padding:10px 18px;font-size:14px}
+  .iframe-blocked .open-big-btn{padding:16px 36px;font-size:18px}
+  .save-indicator{bottom:80px}
 }
 </style>
 </head>
@@ -153,6 +175,7 @@ a{color:var(--accent);text-decoration:none}
     <div class="iframe-header">
       <span class="student-name" id="currentStudent">اضغط على رابط لعرض المشروع</span>
       <button class="open-btn" id="openNewTab" onclick="openInNewTab()" style="display:none">فتح في تاب جديد</button>
+      <button class="mobile-back" onclick="toggleView()">رجوع للقائمة</button>
     </div>
     <div class="iframe-container" id="iframeContainer">
       <div class="iframe-placeholder" id="iframePlaceholder">
@@ -169,6 +192,7 @@ a{color:var(--accent);text-decoration:none}
   </div>
 </div>
 
+<button class="mobile-toggle" id="mobileToggle" onclick="toggleView()" title="عرض المشروع">📂</button>
 <div class="save-indicator" id="saveIndicator">✓ محفوظ</div>
 
 <script>
@@ -539,6 +563,16 @@ function getLinkLabel(url) {
   return 'رابط';
 }
 
+// ==== MOBILE VIEW TOGGLE ====
+function isMobile() { return window.innerWidth <= 800; }
+
+function toggleView() {
+  document.body.classList.toggle('show-viewer');
+  const btn = document.getElementById('mobileToggle');
+  btn.textContent = document.body.classList.contains('show-viewer') ? '📋' : '📂';
+  btn.title = document.body.classList.contains('show-viewer') ? 'رجوع للقائمة' : 'عرض المشروع';
+}
+
 // ==== IFRAME ====
 function loadProject(id, encodedUrl, name) {
   const url = decodeURIComponent(encodedUrl);
@@ -559,6 +593,11 @@ function loadProject(id, encodedUrl, name) {
     placeholder.style.display = 'none';
     frame.style.display = '';
     frame.src = url;
+  }
+
+  // On mobile, auto-switch to viewer
+  if (isMobile() && !document.body.classList.contains('show-viewer')) {
+    toggleView();
   }
 }
 
