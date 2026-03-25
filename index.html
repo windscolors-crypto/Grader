@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مصحح مشاريع الطالبات - UNRWA</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;
+  --text2:#8b949e;--accent:#58a6ff;--green:#3fb950;--yellow:#d29922;--red:#f85149;
+  --canva:#00c4cc;--youtube:#ff0000;--google:#4285f4;--whatsapp:#25d366;
+}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;direction:rtl}
+a{color:var(--accent);text-decoration:none}
+
+/* Layout */
+.container{display:flex;height:100vh;width:100%}
+.panel-left{width:40%;min-width:340px;border-left:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
+.panel-right{width:60%;display:flex;flex-direction:column;overflow:hidden}
+
+/* Header */
+.app-header{background:var(--surface);padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-shrink:0}
+.app-header h1{font-size:16px;font-weight:600}
+.app-header .stats{margin-right:auto;font-size:13px;color:var(--text2)}
+.reload-btn{padding:4px 10px;background:var(--border);color:var(--text);border:none;border-radius:4px;cursor:pointer;font-size:12px;font-family:inherit}
+.reload-btn:hover{background:var(--accent)}
+
+/* Tabs */
+.tabs{display:flex;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0;overflow-x:auto}
+.tab{padding:10px 14px;cursor:pointer;font-size:14px;color:var(--text2);border-bottom:2px solid transparent;white-space:nowrap;transition:.2s}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab .badge{background:var(--border);color:var(--text2);font-size:11px;padding:1px 6px;border-radius:10px;margin-right:4px}
+.tab.active .badge{background:var(--accent);color:#fff}
+
+/* Search */
+.search-bar{padding:8px 12px;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0}
+.search-bar input{width:100%;padding:8px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:14px;outline:none}
+.search-bar input:focus{border-color:var(--accent)}
+.search-bar input::placeholder{color:var(--text2)}
+
+/* Student List */
+.student-list{flex:1;overflow-y:auto;padding:8px}
+.student-list::-webkit-scrollbar{width:6px}
+.student-list::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+/* Student Card */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:8px;transition:.2s}
+.card:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.card-name{font-size:15px;font-weight:600;flex:1}
+.card-div{font-size:12px;color:var(--text2);background:var(--bg);padding:2px 8px;border-radius:4px}
+.card-total{font-size:18px;font-weight:700;min-width:50px;text-align:center;padding:4px 8px;border-radius:6px}
+
+/* Links */
+.links-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.link-btn{padding:5px 12px;border-radius:6px;border:none;color:#fff;cursor:pointer;font-size:13px;font-family:inherit;transition:.2s}
+.link-btn:hover{opacity:.85;transform:scale(1.03)}
+.link-btn.canva{background:var(--canva)}
+.link-btn.youtube{background:var(--youtube)}
+.link-btn.google{background:var(--google)}
+.link-btn.whatsapp{background:var(--whatsapp)}
+.link-btn.other{background:var(--text2)}
+.link-warn{font-size:12px;color:var(--yellow);padding:4px 8px;background:rgba(210,153,34,.15);border-radius:4px;display:inline-block}
+
+/* WhatsApp add */
+.wa-add{display:flex;gap:6px;margin-bottom:8px}
+.wa-add input{flex:1;padding:6px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;outline:none;direction:ltr;text-align:left}
+.wa-add input:focus{border-color:var(--whatsapp)}
+.wa-add button{padding:6px 12px;background:var(--whatsapp);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit;white-space:nowrap}
+
+/* Grading */
+.grade-section{margin-bottom:6px}
+.grade-label{font-size:13px;color:var(--text2);margin-bottom:4px;display:flex;align-items:center;gap:4px}
+.grade-btns{display:flex;flex-wrap:wrap;gap:4px}
+.grade-btn{min-width:38px;min-height:38px;border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:6px;cursor:pointer;font-size:14px;font-family:inherit;transition:.2s}
+.grade-btn:hover{border-color:var(--accent);background:rgba(88,166,255,.1)}
+.grade-btn.selected{background:var(--accent);color:#fff;border-color:var(--accent)}
+.broken-btn{padding:8px 14px;background:rgba(248,81,73,.15);color:var(--red);border:1px solid var(--red);border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit;margin-top:4px;transition:.2s}
+.broken-btn:hover{background:rgba(248,81,73,.3)}
+
+/* Notes */
+.card-notes{font-size:12px;color:var(--yellow);margin-top:4px}
+
+/* Save indicator */
+.save-indicator{position:fixed;bottom:20px;left:20px;background:var(--green);color:#fff;padding:6px 16px;border-radius:20px;font-size:13px;opacity:0;transition:opacity .3s;z-index:999;pointer-events:none}
+.save-indicator.show{opacity:1}
+
+/* Loading */
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;height:200px;color:var(--text2);gap:12px}
+.loading .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.data-source{font-size:11px;color:var(--text2);padding:2px 6px;background:var(--bg);border-radius:3px}
+
+/* Right panel */
+.iframe-header{background:var(--surface);padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-shrink:0}
+.iframe-header .student-name{font-size:15px;font-weight:600;flex:1}
+.iframe-header .open-btn{padding:6px 14px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit}
+.iframe-container{flex:1;position:relative;background:#000}
+.iframe-container iframe{width:100%;height:100%;border:none}
+.iframe-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--text2);gap:16px;padding:20px;text-align:center}
+.iframe-placeholder .icon{font-size:64px;opacity:.4}
+.iframe-placeholder p{font-size:16px}
+.iframe-blocked{display:none;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--text2);gap:16px;padding:20px;text-align:center}
+.iframe-blocked .warn-icon{font-size:48px}
+.iframe-blocked p{font-size:15px;max-width:400px}
+.iframe-blocked .open-big-btn{padding:14px 32px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:16px;font-family:inherit;margin-top:8px}
+
+/* Export */
+.export-bar{padding:8px 12px;background:var(--surface);border-top:1px solid var(--border);display:flex;gap:8px;flex-shrink:0;align-items:center}
+.export-btn{padding:8px 16px;background:var(--green);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit}
+.export-btn:hover{opacity:.85}
+
+/* Color helpers */
+.total-green{color:var(--green)}
+.total-yellow{color:var(--yellow)}
+.total-red{color:var(--red)}
+
+/* Responsive */
+@media(max-width:800px){
+  .container{flex-direction:column}
+  .panel-left,.panel-right{width:100%;min-width:0}
+  .panel-left{height:50vh;border-left:none;border-bottom:1px solid var(--border)}
+  .panel-right{height:50vh}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- LEFT PANEL -->
+  <div class="panel-left">
+    <div class="app-header">
+      <h1>مصحح المشاريع</h1>
+      <span class="data-source" id="dataSource"></span>
+      <span class="stats" id="globalStats"></span>
+      <button class="reload-btn" onclick="init()" title="تحديث البيانات">تحديث</button>
+    </div>
+    <div class="tabs" id="tabsContainer"></div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="بحث بالاسم...">
+    </div>
+    <div class="student-list" id="studentList"></div>
+    <div class="export-bar">
+      <button class="export-btn" onclick="exportCSV()">تصدير CSV</button>
+      <span style="font-size:12px;color:var(--text2)" id="exportInfo"></span>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel-right">
+    <div class="iframe-header">
+      <span class="student-name" id="currentStudent">اضغط على رابط لعرض المشروع</span>
+      <button class="open-btn" id="openNewTab" onclick="openInNewTab()" style="display:none">فتح في تاب جديد</button>
+    </div>
+    <div class="iframe-container" id="iframeContainer">
+      <div class="iframe-placeholder" id="iframePlaceholder">
+        <div class="icon">📂</div>
+        <p>اختاري طالبة واضغطي على رابط المشروع لعرضه هنا</p>
+      </div>
+      <div class="iframe-blocked" id="iframeBlocked">
+        <div class="warn-icon">⚠️</div>
+        <p>هذا الموقع لا يسمح بالعرض المدمج (iframe)</p>
+        <button class="open-big-btn" onclick="openInNewTab()">افتح الرابط في تاب جديد</button>
+      </div>
+      <iframe id="projectFrame" style="display:none" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="save-indicator" id="saveIndicator">✓ محفوظ</div>
+
+<script>
+// ==== CONFIG ====
+const SHEET_ID = '1Cx8ZSkWou6dinH6xqUr3AeepzlW2jOgQ9Q2oK0_iSuI';
+const SHEET_CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv`;
+
+// Column mapping (0-indexed) per grade
+// A=0 Timestamp, B=1 Name, C=2 Grade
+// Each grade section: Division, Link1, Link2, Notes
+const GRADE_COLS = {
+  'الصف السابع':  { div: 3,  links: [4, 5],   notes: 6,  linkLabels: ['وثيقة','فيديو'] },
+  'الصف الثامن':  { div: 7,  links: [8, 9],   notes: 10, linkLabels: ['كتاب إلكتروني','استبانة'] },
+  'الصف التاسع':  { div: 11, links: [12, 13],  notes: 14, linkLabels: ['سيناريو','فيديو'] },
+  'الصف العاشر':  { div: 15, links: [16, 17],  notes: 18, linkLabels: ['خطة مشروع','بروشور'] }
+};
+
+const GRADE_SHORT = {
+  'الصف السابع': 'سابع',
+  'الصف الثامن': 'ثامن',
+  'الصف التاسع': 'تاسع',
+  'الصف العاشر': 'عاشر'
+};
+
+// ==== STATE ====
+let students = [];
+let grades = {};
+let waLinks = {};
+let currentGrade = '';
+let currentUrl = '';
+
+const STORAGE_KEY = 'grader_grades_v2';
+const WA_STORAGE_KEY = 'grader_wa_links_v2';
+
+// ==== CSV PARSER ====
+function parseCSV(text) {
+  const rows = [];
+  let current = '';
+  let inQuotes = false;
+  let row = [];
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"') {
+        if (text[i+1] === '"') { current += '"'; i++; }
+        else { inQuotes = false; }
+      } else {
+        current += ch;
+      }
+    } else {
+      if (ch === '"') { inQuotes = true; }
+      else if (ch === ',') { row.push(current); current = ''; }
+      else if (ch === '\n' || (ch === '\r' && text[i+1] === '\n')) {
+        row.push(current); current = '';
+        if (row.length > 1 || row[0] !== '') rows.push(row);
+        row = [];
+        if (ch === '\r') i++;
+      } else {
+        current += ch;
+      }
+    }
+  }
+  if (current || row.length) { row.push(current); rows.push(row); }
+  return rows;
+}
+
+// ==== DATA LOADING ====
+async function loadFromSheet() {
+  const resp = await fetch(SHEET_CSV_URL);
+  if (!resp.ok) throw new Error('Sheet fetch failed: ' + resp.status);
+  const text = await resp.text();
+  const rows = parseCSV(text);
+  if (rows.length < 2) throw new Error('No data rows');
+  return csvToStudents(rows.slice(1)); // skip header
+}
+
+async function loadFromJSON() {
+  const resp = await fetch('data.json');
+  if (!resp.ok) throw new Error('data.json fetch failed');
+  return await resp.json();
+}
+
+function csvToStudents(rows) {
+  // Build map: name+grade → latest row (by timestamp)
+  const map = new Map();
+
+  for (const cols of rows) {
+    const name = (cols[1] || '').trim();
+    const gradeRaw = (cols[2] || '').trim();
+    if (!name || !gradeRaw) continue;
+
+    const gradeCfg = GRADE_COLS[gradeRaw];
+    if (!gradeCfg) continue;
+
+    const grade = GRADE_SHORT[gradeRaw] || gradeRaw;
+    const key = grade + '|' + name;
+    const timestamp = cols[0] || '';
+
+    // Keep latest submission
+    if (map.has(key) && map.get(key).timestamp > timestamp) continue;
+
+    const division = (cols[gradeCfg.div] || '').trim();
+    const links = gradeCfg.links
+      .map(i => (cols[i] || '').trim())
+      .filter(Boolean);
+    const notes = (cols[gradeCfg.notes] || '').trim();
+
+    // Deduplicate links
+    const uniqueLinks = [...new Set(links)];
+
+    map.set(key, {
+      id: key,
+      name: name,
+      grade: grade,
+      division: division,
+      links: uniqueLinks,
+      linkLabels: gradeCfg.linkLabels,
+      notes: notes,
+      timestamp: timestamp
+    });
+  }
+
+  return Array.from(map.values());
+}
+
+// ==== INIT ====
+async function init() {
+  const list = document.getElementById('studentList');
+  list.innerHTML = '<div class="loading"><div class="spinner"></div><span>جاري تحميل البيانات...</span></div>';
+
+  // Load saved state
+  try { grades = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { grades = {}; }
+  try { waLinks = JSON.parse(localStorage.getItem(WA_STORAGE_KEY)) || {}; } catch(e) { waLinks = {}; }
+
+  let source = '';
+  try {
+    students = await loadFromSheet();
+    source = 'Google Sheet (مباشر)';
+  } catch(e) {
+    console.warn('Sheet load failed, trying data.json:', e);
+    try {
+      students = await loadFromJSON();
+      source = 'data.json (محلي)';
+    } catch(e2) {
+      list.innerHTML = '<p style="padding:20px;color:var(--red)">خطأ في تحميل البيانات. تأكدي من الاتصال بالإنترنت أو وجود ملف data.json</p>';
+      return;
+    }
+  }
+
+  // Clean links
+  students.forEach(s => {
+    s.links = (s.links || []).map(l => typeof l === 'string' ? l.trim() : '').filter(Boolean);
+    s.links = [...new Set(s.links)];
+    if (!s.linkLabels) s.linkLabels = ['رابط 1','رابط 2'];
+  });
+
+  document.getElementById('dataSource').textContent = source;
+  currentGrade = '';
+  buildTabs();
+  renderList();
+  updateStats();
+}
+
+// ==== BLOCKED DOMAINS ====
+const BLOCKED_DOMAINS = ['canva.com','youtube.com','youtu.be','facebook.com','instagram.com','tiktok.com'];
+function isBlockedDomain(url) {
+  try { return BLOCKED_DOMAINS.some(d => new URL(url).hostname.toLowerCase().includes(d)); }
+  catch(e) { return false; }
+}
+
+// ==== TABS ====
+function buildTabs() {
+  const gradeOrder = ['سابع','ثامن','تاسع','عاشر'];
+  const container = document.getElementById('tabsContainer');
+  const available = [...new Set(students.map(s => s.grade))];
+  available.sort((a,b) => gradeOrder.indexOf(a) - gradeOrder.indexOf(b));
+
+  container.innerHTML = available.map(g => {
+    const total = students.filter(s => s.grade === g).length;
+    const done = students.filter(s => s.grade === g && isGraded(s)).length;
+    return `<div class="tab${currentGrade===g?' active':''}" data-grade="${g}" onclick="selectGrade('${g}')">
+      ${g} <span class="badge">${done}/${total}</span>
+    </div>`;
+  }).join('');
+
+  if (!currentGrade && available.length) {
+    currentGrade = available[0];
+    const first = container.querySelector('.tab');
+    if (first) first.classList.add('active');
+  }
+}
+
+function selectGrade(g) {
+  currentGrade = g;
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.grade === g));
+  renderList();
+  updateStats();
+}
+
+function isGraded(s) {
+  const g = grades[s.id];
+  return g && (g.doc !== undefined || g.video !== undefined || g.pub !== undefined);
+}
+
+// ==== SEARCH ====
+document.getElementById('searchInput').addEventListener('input', () => renderList());
+
+// ==== RENDER LIST ====
+function renderList() {
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  const list = document.getElementById('studentList');
+
+  let filtered = students.filter(s => s.grade === currentGrade);
+  if (query) {
+    filtered = students.filter(s => s.name.toLowerCase().includes(query));
+  }
+
+  filtered.sort((a,b) => {
+    const ag = isGraded(a) ? 1 : 0;
+    const bg = isGraded(b) ? 1 : 0;
+    if (ag !== bg) return ag - bg;
+    return a.name.localeCompare(b.name, 'ar');
+  });
+
+  list.innerHTML = filtered.length
+    ? filtered.map(s => renderCard(s)).join('')
+    : '<p style="padding:20px;color:var(--text2);text-align:center">لا توجد نتائج</p>';
+}
+
+function esc(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+function renderCard(s) {
+  const g = grades[s.id] || {};
+  const doc = g.doc ?? '';
+  const video = g.video ?? '';
+  const pub = g.pub ?? '';
+  const total = (doc === '' ? 0 : doc) + (video === '' ? 0 : video) + (pub === '' ? 0 : pub);
+  const hasGrade = doc !== '' || video !== '' || pub !== '';
+  const totalClass = hasGrade ? (total >= 16 ? 'total-green' : total >= 10 ? 'total-yellow' : 'total-red') : '';
+
+  const allLinks = [...s.links];
+  const extraLinks = waLinks[s.id] || [];
+  extraLinks.forEach(l => { if (!allLinks.includes(l)) allLinks.push(l); });
+
+  const labels = s.linkLabels || [];
+
+  const linksHTML = allLinks.map((link, i) => {
+    if (!isValidUrl(link)) {
+      return `<span class="link-warn">⚠️ "${esc(link)}" — ليس رابطاً صالحاً</span>`;
+    }
+    const type = getLinkType(link);
+    const isExtra = extraLinks.includes(link) && !s.links.includes(link);
+    const cls = isExtra ? ' whatsapp' : (' ' + type);
+    const label = isExtra ? '💬 واتساب' : (labels[i] || getLinkLabel(link));
+    const escapedId = esc(s.id);
+    const escapedName = esc(s.name);
+    return `<button class="link-btn${cls}" onclick="loadProject('${escapedId}','${encodeURIComponent(link)}','${escapedName}')" title="${esc(link)}">${label}</button>`;
+  }).join('');
+
+  const escapedId = esc(s.id);
+
+  return `<div class="card" id="card-${CSS.escape(s.id)}">
+    <div class="card-header">
+      <span class="card-name">${esc(s.name)}</span>
+      <span class="card-div">${esc(s.division || '')}</span>
+      <span class="card-total ${totalClass}">${hasGrade ? total + '/20' : '—'}</span>
+    </div>
+    <div class="links-row">${linksHTML || '<span style="color:var(--text2);font-size:13px">لا يوجد روابط</span>'}</div>
+    <div class="wa-add">
+      <input type="text" placeholder="لصق رابط واتساب..." id="wa-${CSS.escape(s.id)}" dir="ltr">
+      <button onclick="addWaLink('${escapedId}')">+ إضافة</button>
+    </div>
+    <div class="grade-section">
+      <div class="grade-label">📄 وثيقة (0–7)</div>
+      <div class="grade-btns">${renderGradeBtns(s.id, 'doc', 7, doc)}</div>
+    </div>
+    <div class="grade-section">
+      <div class="grade-label">🎬 فيديو (0–7)</div>
+      <div class="grade-btns">${renderGradeBtns(s.id, 'video', 7, video)}</div>
+    </div>
+    <div class="grade-section">
+      <div class="grade-label">📸 سكرين شوت النشر (0–6)</div>
+      <div class="grade-btns">${renderGradeBtns(s.id, 'pub', 6, pub)}</div>
+    </div>
+    <button class="broken-btn" onclick="setBroken('${escapedId}')">🔴 رابط لا يعمل ← 7</button>
+    ${s.notes ? `<div class="card-notes">📝 ${esc(s.notes)}</div>` : ''}
+  </div>`;
+}
+
+function renderGradeBtns(id, field, max, current) {
+  let html = '';
+  const escapedId = esc(id);
+  for (let i = 0; i <= max; i++) {
+    const sel = current === i ? ' selected' : '';
+    html += `<button class="grade-btn${sel}" onclick="setGrade('${escapedId}','${field}',${i})">${i}</button>`;
+  }
+  return html;
+}
+
+// ==== GRADING ====
+function setGrade(id, field, value) {
+  if (!grades[id]) grades[id] = {};
+  grades[id][field] = value;
+  saveGrades();
+  refreshCard(id);
+  buildTabs();
+  updateStats();
+}
+
+function setBroken(id) {
+  grades[id] = { doc: 3, video: 3, pub: 1 };
+  saveGrades();
+  refreshCard(id);
+  buildTabs();
+  updateStats();
+}
+
+function refreshCard(id) {
+  const s = students.find(st => st.id === id);
+  if (!s) return;
+  const el = document.getElementById('card-' + CSS.escape(id));
+  if (el) {
+    const temp = document.createElement('div');
+    temp.innerHTML = renderCard(s);
+    el.replaceWith(temp.firstElementChild);
+  }
+}
+
+// ==== WHATSAPP LINKS ====
+function addWaLink(id) {
+  const input = document.getElementById('wa-' + CSS.escape(id));
+  if (!input) return;
+  const url = input.value.trim();
+  if (!url) return;
+  if (!waLinks[id]) waLinks[id] = [];
+  if (!waLinks[id].includes(url)) {
+    waLinks[id].push(url);
+    localStorage.setItem(WA_STORAGE_KEY, JSON.stringify(waLinks));
+    showSaved();
+    refreshCard(id);
+  }
+  input.value = '';
+}
+
+// ==== LINK HELPERS ====
+function isValidUrl(str) {
+  try { new URL(str); return true; } catch(e) { return false; }
+}
+
+function getLinkType(url) {
+  try {
+    const h = new URL(url).hostname.toLowerCase();
+    if (h.includes('canva.com')) return 'canva';
+    if (h.includes('youtube.com') || h.includes('youtu.be')) return 'youtube';
+    if (h.includes('google.com') || h.includes('docs.google') || h.includes('drive.google')) return 'google';
+    return 'other';
+  } catch(e) { return 'other'; }
+}
+
+function getLinkLabel(url) {
+  const type = getLinkType(url);
+  if (type === 'canva') return 'Canva';
+  if (type === 'youtube') return 'YouTube';
+  if (type === 'google') return 'Google';
+  return 'رابط';
+}
+
+// ==== IFRAME ====
+function loadProject(id, encodedUrl, name) {
+  const url = decodeURIComponent(encodedUrl);
+  currentUrl = url;
+  document.getElementById('currentStudent').textContent = name;
+  document.getElementById('openNewTab').style.display = '';
+
+  const frame = document.getElementById('projectFrame');
+  const placeholder = document.getElementById('iframePlaceholder');
+  const blocked = document.getElementById('iframeBlocked');
+
+  if (isBlockedDomain(url)) {
+    frame.style.display = 'none';
+    placeholder.style.display = 'none';
+    blocked.style.display = 'flex';
+  } else {
+    blocked.style.display = 'none';
+    placeholder.style.display = 'none';
+    frame.style.display = '';
+    frame.src = url;
+  }
+}
+
+function openInNewTab() {
+  if (currentUrl) window.open(currentUrl, '_blank');
+}
+
+// ==== SAVE ====
+function saveGrades() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(grades));
+  showSaved();
+}
+
+function showSaved() {
+  const el = document.getElementById('saveIndicator');
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 1000);
+}
+
+// ==== STATS ====
+function updateStats() {
+  const total = students.length;
+  const done = students.filter(s => isGraded(s)).length;
+  document.getElementById('globalStats').textContent = `تم ${done}/${total}`;
+
+  const graded = students.filter(s => isGraded(s));
+  const avg = graded.length ? (graded.reduce((sum,s) => {
+    const g = grades[s.id] || {};
+    return sum + (g.doc||0) + (g.video||0) + (g.pub||0);
+  }, 0) / graded.length).toFixed(1) : '—';
+  document.getElementById('exportInfo').textContent = `المعدل: ${avg}/20`;
+}
+
+// ==== EXPORT CSV ====
+function exportCSV() {
+  const BOM = '\uFEFF';
+  const headers = ['الاسم','الصف','الشعبة','وثيقة/7','فيديو/7','نشر/6','المجموع/20','ملاحظة'];
+  const rows = students.map(s => {
+    const g = grades[s.id] || {};
+    const doc = g.doc ?? '';
+    const video = g.video ?? '';
+    const pub = g.pub ?? '';
+    const total = (doc === '' && video === '' && pub === '') ? '' : ((doc||0)+(video||0)+(pub||0));
+    return [s.name, s.grade, s.division||'', doc, video, pub, total, s.notes||''].map(v => `"${v}"`).join(',');
+  });
+
+  const csv = BOM + headers.join(',') + '\n' + rows.join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `grades_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ==== START ====
+init();
+</script>
+</body>
+</html>
