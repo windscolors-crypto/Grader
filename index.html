@@ -247,11 +247,11 @@ a{color:var(--accent);text-decoration:none}
         <option value="عاشر">العاشر</option>
       </select>
 
-      <label>رفع ملف ZIP المصدّر من واتساب:</label>
+      <label>رفع ملف ZIP أو TXT المصدّر من واتساب:</label>
       <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
         <label style="flex:1;min-width:200px;padding:14px;background:var(--bg);border:2px dashed var(--border);border-radius:8px;cursor:pointer;text-align:center;color:var(--text2);font-size:14px;transition:.2s" id="zipDropZone">
-          <span id="zipLabel">📦 اضغطي لاختيار ملف ZIP</span>
-          <input type="file" accept=".zip" id="waZipFile" onchange="handleZipUpload(this)" style="display:none">
+          <span id="zipLabel">📦 اضغطي لاختيار ملف (ZIP أو TXT)</span>
+          <input type="file" accept=".zip,.txt,.text" id="waZipFile" onchange="handleFileUpload(this)" style="display:none">
         </label>
       </div>
 
@@ -275,12 +275,31 @@ a{color:var(--accent);text-decoration:none}
 // ==== ZIP MEDIA STORAGE ====
 let waMediaFiles = {}; // filename -> blob URL
 
-async function handleZipUpload(input) {
+async function handleFileUpload(input) {
   const file = input.files[0];
   if (!file) return;
 
   const label = document.getElementById('zipLabel');
-  label.textContent = '⏳ جاري فك الضغط...';
+  const dropZone = document.getElementById('zipDropZone');
+
+  // Handle TXT file directly
+  if (file.name.endsWith('.txt') || file.type === 'text/plain') {
+    label.textContent = '⏳ جاري قراءة الملف...';
+    try {
+      const text = await file.text();
+      document.getElementById('waChatText').value = text;
+      label.textContent = `✅ ${file.name}`;
+      dropZone.style.borderColor = 'var(--green)';
+    } catch(e) {
+      label.textContent = '❌ خطأ في قراءة الملف النصي';
+      dropZone.style.borderColor = 'var(--red)';
+    }
+    return;
+  }
+
+  // Handle ZIP file
+  const sizeMB = (file.size / 1024 / 1024).toFixed(1);
+  label.textContent = `⏳ جاري فك الضغط (${sizeMB} MB)...`;
 
   try {
     const zip = await JSZip.loadAsync(file);
@@ -288,57 +307,70 @@ async function handleZipUpload(input) {
     waMediaFiles = {};
     const mediaNames = [];
 
+    // First pass: find chat text file only (fast)
     for (const [filename, zipEntry] of Object.entries(zip.files)) {
       if (zipEntry.dir) continue;
-
-      const name = filename.split('/').pop(); // remove folder prefix
-
-      if (name.endsWith('.txt') && (name.includes('chat') || name.includes('Chat') || name.includes('دردشة') || name === '_chat.txt')) {
-        // Chat text file
+      const name = filename.split('/').pop();
+      if (name.endsWith('.txt')) {
         const blob = await zipEntry.async('blob');
         chatText = await blob.text();
-      } else {
-        // Media file
-        const blob = await zipEntry.async('blob');
-        const blobUrl = URL.createObjectURL(blob);
-        waMediaFiles[name] = { url: blobUrl, type: blob.type, size: blob.size };
-        mediaNames.push(name);
-      }
-    }
-
-    // If no _chat.txt found, try any .txt file
-    if (!chatText) {
-      for (const [filename, zipEntry] of Object.entries(zip.files)) {
-        if (!zipEntry.dir && filename.endsWith('.txt')) {
-          const blob = await zipEntry.async('blob');
-          chatText = await blob.text();
-          break;
-        }
+        break;
       }
     }
 
     if (chatText) {
       document.getElementById('waChatText').value = chatText;
-      label.textContent = `✅ ${file.name}`;
-      label.parentElement.style.borderColor = 'var(--green)';
-    } else {
-      label.textContent = '❌ لم يتم العثور على ملف المحادثة';
-      label.parentElement.style.borderColor = 'var(--red)';
-    }
+      label.textContent = `✅ ${file.name} — جاري تحميل الوسائط...`;
+      dropZone.style.borderColor = 'var(--green)';
 
-    // Show media info
-    if (mediaNames.length > 0) {
-      const info = document.getElementById('waMediaInfo');
-      info.style.display = '';
-      document.getElementById('waMediaCount').textContent = `📎 ${mediaNames.length} ملف وسائط (صور/فيديو/مستندات)`;
-      document.getElementById('waMediaList').textContent = mediaNames.slice(0, 10).join('، ') + (mediaNames.length > 10 ? `... و ${mediaNames.length - 10} ملف آخر` : '');
+      // Second pass: load media files (slower, non-blocking)
+      for (const [filename, zipEntry] of Object.entries(zip.files)) {
+        if (zipEntry.dir) continue;
+        const name = filename.split('/').pop();
+        if (name.endsWith('.txt')) continue;
+        try {
+          const blob = await zipEntry.async('blob');
+          const blobUrl = URL.createObjectURL(blob);
+          waMediaFiles[name] = { url: blobUrl, type: blob.type || guessType(name), size: blob.size };
+          mediaNames.push(name);
+        } catch(e) {
+          // Skip files that fail to load
+          mediaNames.push(name + ' (فشل التحميل)');
+        }
+      }
+
+      label.textContent = `✅ ${file.name}`;
+
+      if (mediaNames.length > 0) {
+        const info = document.getElementById('waMediaInfo');
+        info.style.display = '';
+        document.getElementById('waMediaCount').textContent = `📎 ${mediaNames.length} ملف وسائط`;
+        document.getElementById('waMediaList').textContent = mediaNames.slice(0, 10).join('، ') + (mediaNames.length > 10 ? `... و ${mediaNames.length - 10} ملف آخر` : '');
+      }
+    } else {
+      label.textContent = '❌ لم يتم العثور على ملف المحادثة داخل ZIP';
+      dropZone.style.borderColor = 'var(--red)';
     }
 
   } catch(e) {
     console.error('ZIP error:', e);
-    label.textContent = '❌ خطأ في قراءة الملف';
-    label.parentElement.style.borderColor = 'var(--red)';
+    // Show helpful error message
+    let msg = '❌ خطأ في قراءة الملف المضغوط';
+    if (file.size > 100 * 1024 * 1024) {
+      msg += ' — الملف كبير جداً. جربي رفع ملف .txt بدل ZIP';
+    } else {
+      msg += ' — جربي رفع ملف .txt مباشرة';
+    }
+    label.textContent = msg;
+    dropZone.style.borderColor = 'var(--red)';
   }
+}
+
+function guessType(name) {
+  const ext = name.split('.').pop().toLowerCase();
+  const types = {jpg:'image/jpeg',jpeg:'image/jpeg',png:'image/png',gif:'image/gif',webp:'image/webp',heic:'image/heic',
+    mp4:'video/mp4',mov:'video/quicktime',pdf:'application/pdf',doc:'application/msword',docx:'application/msword'};
+  return types[ext] || '';
 }
 
 // ==== CONFIG ====
