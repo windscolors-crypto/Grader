@@ -243,17 +243,100 @@ a{color:var(--accent);text-decoration:none}
         <option value="عاشر">العاشر</option>
       </select>
 
-      <label>الصقي محادثة الواتساب هنا:</label>
-      <textarea id="waChatText" placeholder="انسخي المحادثة من واتساب ويب والصقيها هنا...&#10;&#10;أو الصقي محتوى ملف التصدير .txt"></textarea>
+      <label>رفع ملف ZIP المصدّر من واتساب:</label>
+      <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+        <label style="flex:1;min-width:200px;padding:14px;background:var(--bg);border:2px dashed var(--border);border-radius:8px;cursor:pointer;text-align:center;color:var(--text2);font-size:14px;transition:.2s" id="zipDropZone">
+          <span id="zipLabel">📦 اضغطي لاختيار ملف ZIP</span>
+          <input type="file" accept=".zip" id="waZipFile" onchange="handleZipUpload(this)" style="display:none">
+        </label>
+      </div>
+
+      <label>أو الصقي المحادثة يدوياً:</label>
+      <textarea id="waChatText" placeholder="انسخي المحادثة من واتساب ويب والصقيها هنا..."></textarea>
 
       <button class="wa-parse-btn" onclick="parseWaChat()">🔍 استخراج الروابط والملفات</button>
+
+      <div id="waMediaInfo" style="display:none;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px;margin-bottom:12px">
+        <div style="font-size:14px;color:var(--green);margin-bottom:6px" id="waMediaCount"></div>
+        <div style="font-size:12px;color:var(--text2)" id="waMediaList"></div>
+      </div>
 
       <div class="wa-results" id="waResults"></div>
     </div>
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
+// ==== ZIP MEDIA STORAGE ====
+let waMediaFiles = {}; // filename -> blob URL
+
+async function handleZipUpload(input) {
+  const file = input.files[0];
+  if (!file) return;
+
+  const label = document.getElementById('zipLabel');
+  label.textContent = '⏳ جاري فك الضغط...';
+
+  try {
+    const zip = await JSZip.loadAsync(file);
+    let chatText = '';
+    waMediaFiles = {};
+    const mediaNames = [];
+
+    for (const [filename, zipEntry] of Object.entries(zip.files)) {
+      if (zipEntry.dir) continue;
+
+      const name = filename.split('/').pop(); // remove folder prefix
+
+      if (name.endsWith('.txt') && (name.includes('chat') || name.includes('Chat') || name.includes('دردشة') || name === '_chat.txt')) {
+        // Chat text file
+        const blob = await zipEntry.async('blob');
+        chatText = await blob.text();
+      } else {
+        // Media file
+        const blob = await zipEntry.async('blob');
+        const blobUrl = URL.createObjectURL(blob);
+        waMediaFiles[name] = { url: blobUrl, type: blob.type, size: blob.size };
+        mediaNames.push(name);
+      }
+    }
+
+    // If no _chat.txt found, try any .txt file
+    if (!chatText) {
+      for (const [filename, zipEntry] of Object.entries(zip.files)) {
+        if (!zipEntry.dir && filename.endsWith('.txt')) {
+          const blob = await zipEntry.async('blob');
+          chatText = await blob.text();
+          break;
+        }
+      }
+    }
+
+    if (chatText) {
+      document.getElementById('waChatText').value = chatText;
+      label.textContent = `✅ ${file.name}`;
+      label.parentElement.style.borderColor = 'var(--green)';
+    } else {
+      label.textContent = '❌ لم يتم العثور على ملف المحادثة';
+      label.parentElement.style.borderColor = 'var(--red)';
+    }
+
+    // Show media info
+    if (mediaNames.length > 0) {
+      const info = document.getElementById('waMediaInfo');
+      info.style.display = '';
+      document.getElementById('waMediaCount').textContent = `📎 ${mediaNames.length} ملف وسائط (صور/فيديو/مستندات)`;
+      document.getElementById('waMediaList').textContent = mediaNames.slice(0, 10).join('، ') + (mediaNames.length > 10 ? `... و ${mediaNames.length - 10} ملف آخر` : '');
+    }
+
+  } catch(e) {
+    console.error('ZIP error:', e);
+    label.textContent = '❌ خطأ في قراءة الملف';
+    label.parentElement.style.borderColor = 'var(--red)';
+  }
+}
+
 // ==== CONFIG ====
 const SHEET_ID = '1Cx8ZSkWou6dinH6xqUr3AeepzlW2jOgQ9Q2oK0_iSuI';
 const SHEET_CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv`;
@@ -827,8 +910,8 @@ function parseWaChat() {
 
   // Extract links and files from messages
   const urlRegex = /https?:\/\/[^\s<>"{}|\\^`\[\]]+/gi;
-  const fileRegex = /‎?<?(\S+\.(jpg|jpeg|png|pdf|docx?|pptx?|mp4|mov|webp|gif))\s*(?:\(file attached\))?/gi;
-  const attachRegex = /(file attached|الملف مرفق|تم إرفاق ملف|attached|image omitted|video omitted|sticker omitted|document omitted)/i;
+  const fileRegex = /<?(\S+\.(jpg|jpeg|png|pdf|docx?|pptx?|xlsx?|mp4|mov|webp|gif|heic|avi|mkv))\s*>?\s*(?:\(file attached\))?/gi;
+  const attachRegex = /(file attached|الملف مرفق|تم إرفاق|attached|مرفق|image omitted|video omitted|sticker omitted|document omitted|‎صورة تم حذفها|‎فيديو تم حذفه|‎ملصق تم حذفه|‎مستند تم حذفه)/i;
 
   waParseResults = [];
   const senderMap = new Map(); // group by sender
@@ -899,7 +982,17 @@ function parseWaChat() {
       html += r.urls.map(u => `<div class="wa-result-content"><a href="${esc(u)}" target="_blank">${esc(u)}</a></div>`).join('');
     }
     if (r.files.length) {
-      html += r.files.map(f => `<div class="wa-result-file">📎 ${esc(f)}</div>`).join('');
+      html += r.files.map(f => {
+        const media = waMediaFiles[f];
+        if (media && media.type && media.type.startsWith('image/')) {
+          return `<div class="wa-result-file">📎 ${esc(f)} <a href="${media.url}" target="_blank" style="color:var(--accent)">[عرض]</a></div>
+                  <img src="${media.url}" style="max-width:200px;max-height:150px;border-radius:6px;margin:4px 0;border:1px solid var(--border)">`;
+        }
+        if (media) {
+          return `<div class="wa-result-file">📎 ${esc(f)} <a href="${media.url}" download="${esc(f)}" style="color:var(--accent)">[تحميل]</a></div>`;
+        }
+        return `<div class="wa-result-file">📎 ${esc(f)}</div>`;
+      }).join('');
     }
     if (r.hasAttachments && r.files.length === 0) {
       html += `<div class="wa-result-file">📎 ملف/صورة مرفقة</div>`;
