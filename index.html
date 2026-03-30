@@ -155,13 +155,16 @@ a{color:var(--accent);text-decoration:none}
 /* Responsive — Mobile */
 @media(max-width:800px){
   .container{flex-direction:column}
-  .panel-left,.panel-right{width:100%;min-width:0;height:100vh;border-left:none}
+  .panel-left,.panel-right{width:100%;min-width:0;height:100vh;height:100dvh;border-left:none}
   .panel-right{display:none}
   .panel-left{display:flex}
   body.show-viewer .panel-left{display:none}
   body.show-viewer .panel-right{display:flex}
   .mobile-toggle{display:block}
   .mobile-back{display:block}
+  /* Export bar always visible */
+  .export-bar{position:sticky;bottom:0;z-index:100;padding:10px 12px;border-top:2px solid var(--border);background:var(--surface)}
+  .wa-import-btn{padding:10px 18px;font-size:14px}
   /* Bigger touch targets */
   .tab{padding:12px 16px;font-size:15px}
   .grade-btn{min-width:42px;min-height:42px;font-size:15px}
@@ -176,6 +179,7 @@ a{color:var(--accent);text-decoration:none}
   .export-btn{padding:10px 18px;font-size:14px}
   .iframe-blocked .open-big-btn{padding:16px 36px;font-size:18px}
   .save-indicator{bottom:80px}
+  .mobile-toggle{bottom:70px}
 }
 </style>
 </head>
