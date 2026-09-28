@@ -1,1712 +1,1427 @@
 [
   {
-    "id": "سابع|نعمة",
-    "name": "نعمة",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFO82l8fhQNt4i/view",
-      "https://drive.google.com/file/d/JOSxXLTbOnakbtG5VdVN/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|رؤى",
-    "name": "رؤى",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=ZH42cp3DMCe",
-      "https://www.canva.com/design/DAFq0Nw8FP0Cu2w/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|خلود",
-    "name": "خلود",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFW5t3LdYFvSnl/view",
-      "https://docs.google.com/presentation/d/r0sRHLXqcuDgcaKVUapB/edit?usp=sharing",
-      "https://docs.google.com/presentation/d/9h2nm3PvHm1HsNSYL8Yq/edit?usp=sharing"
-    ],
-    "notes": "سلمت متأخرة"
-  },
-  {
-    "id": "سابع|عفاف",
-    "name": "عفاف",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=fwwLCD3Dras",
-      "https://www.canva.com/design/DAFQQWmm9Ik4gZO/view",
-      "https://www.youtube.com/watch?v=b9GWa0ZAzrF"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|دعاء",
-    "name": "دعاء",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/JAVd2XqICEOsdC85aRaz/edit?usp=sharing",
-      "https://www.canva.com/design/DAFX7z3K9d5ib9e/view",
-      "https://drive.google.com/file/d/0FXLWqPU7N6jCQzUpst5/view?usp=sharing"
-    ],
-    "notes": "تحتاج متابعة"
-  },
-  {
-    "id": "سابع|مجد",
-    "name": "مجد",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAF0rBO6QkEleZK/view",
-      "https://www.canva.com/design/DAFuPATZTTLUZw2/view"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "سابع|ميرا",
-    "name": "ميرا",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=KoIaNpoFJ17",
-      "https://drive.google.com/file/d/vwRm19u26zEj1gbtMToc/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|نبأ",
-    "name": "نبأ",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/fWvTAbbKtERjwBt26ukA/edit?usp=sharing",
-      "https://www.canva.com/design/DAFCfE8wgv9ZxD0/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|زينب",
-    "name": "زينب",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/5JsBAvpMa5vXBdE5p2ZE/edit?usp=sharing",
-      "https://docs.google.com/presentation/d/LN8ctHsnh29QJeTfXlBj/edit?usp=sharing"
-    ],
-    "notes": "سلمت متأخرة"
-  },
-  {
-    "id": "سابع|مريم",
-    "name": "مريم",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFDUmYlrS0TGSM/view",
-      "https://www.canva.com/design/DAFdnecddEj8Dsy/view"
-    ],
-    "notes": "سلمت متأخرة"
-  },
-  {
-    "id": "سابع|عائشة",
-    "name": "عائشة",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFW5P3wGLuzqP2/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|سما",
-    "name": "سما",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAF8RdvOeTJ0gON/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|وئام",
-    "name": "وئام",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAF2ogdOCQYhoBo/view",
-      "https://www.canva.com/design/DAF2qTcqKM2uE9r/view",
-      "https://www.youtube.com/watch?v=cce9IsHyuY7"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|هلا",
-    "name": "هلا",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFb5qZL1f2rRm0/view",
-      "https://www.youtube.com/watch?v=rmSfGsygyeu"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|حور",
-    "name": "حور",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFP46fgl17ML97/view",
-      "https://drive.google.com/file/d/3mesKhIIJvxBrRSWpSNI/view?usp=sharing",
-      "https://www.youtube.com/watch?v=IsjLGwXs1Pp"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|نبيلة",
-    "name": "نبيلة",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=T9AXb72xJ5l",
-      "https://www.youtube.com/watch?v=Rt8Bb2YCSYe"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|نغم",
-    "name": "نغم",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFnI0klhhlN7HG/view"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "سابع|ياسمينا",
-    "name": "ياسمينا",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAF462zHzSBpBR1/view",
-      "https://www.canva.com/design/DAFPWqhUDNhbyHU/view",
-      "https://www.canva.com/design/DAFv3S0r5DTUw9L/view"
-    ],
-    "notes": "سلمت متأخرة"
-  },
-  {
-    "id": "سابع|ميار",
-    "name": "ميار",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "  https://drive.google.com/file/d/feNtib7nU3JJs8K0FOkz/view?usp=sharing  ",
-      "https://docs.google.com/presentation/d/hUVJKpeTIu9a67h2SiJS/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|أسماء",
-    "name": "أسماء",
-    "grade": "سابع",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/xkwHL00N4WSzNx2qKz0C/view?usp=sharing",
-      "https://drive.google.com/file/d/gThUfqbBkziIaJmlQeGi/view?usp=sharing"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "سابع|سجى",
-    "name": "سجى",
+    "id": "سابع|Reema omar alomar",
+    "name": "Reema omar alomar",
     "grade": "سابع",
     "division": "ب",
     "links": [
-      "https://docs.google.com/presentation/d/DIr3DPo3BFwtNa8OZYZX/edit?usp=sharing",
-      "https://drive.google.com/file/d/v8jjzeg2m5DvgV2fr0ck/view?usp=sharing",
-      "https://www.youtube.com/watch?v=5FdnmQpmQ4t"
+      "https://www.canva.com/design/DAHD5qvKGZs/2QBjAU01NkcnnnaUnEUfpw/edit?utm_content=DAHD5qvKGZs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://youtube.com/shorts/-ehKlJ0ebU0"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|منى",
-    "name": "منى",
+    "id": "سابع|أماني محمد مصطفى خليل",
+    "name": "أماني محمد مصطفى خليل",
     "grade": "سابع",
     "division": "ب",
     "links": [
-      "https://www.canva.com/design/DAF8VFbg4BficeZ/view",
-      "https://docs.google.com/presentation/d/F2lhWiSKM8Qo4Wg5JYlp/edit?usp=sharing",
-      "https://www.canva.com/design/DAF5VUjfyVGDSuK/view"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "سابع|نور",
-    "name": "نور",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/V1AUojJ9MmD645lsp4rB/view?usp=sharing",
-      "https://drive.google.com/file/d/VoeyesyjchZcrR5YPDWj/view?usp=sharing"
+      "https://www.canva.com/design/DAHDfJNSYfQ/qWT9gk0Mm9Awelsn0ZWsZw/edit?utm_content=DAHDfJNSYfQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://youtube.com/watch?v=jxK1wWw-y-o&si=hLqZv2wZcEaAyafH"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|مرح",
-    "name": "مرح",
+    "id": "سابع|إسراء طارق أمير بكر",
+    "name": "إسراء طارق أمير بكر",
     "grade": "سابع",
-    "division": "ب",
+    "division": "أ",
     "links": [
-      "https://docs.google.com/presentation/d/V0FHzIp8XTFSoGCcVGnm/edit?usp=sharing",
-      "https://drive.google.com/file/d/7WmPgSZbvT4IAIpoFw6S/view?usp=sharing",
-      "https://www.youtube.com/watch?v=zpZbbDMOitj"
+      "https://docs.google.com/document/d/1E33xBIvPqGPwfqFFXJik2qE7f1ubh6cX/edit?usp=drivesdk&ouid=110264463779384190467&rtpof=true&sd=true",
+      "#VideoCook"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|ظبية",
-    "name": "ظبية",
+    "id": "سابع|اصايل الجبر",
+    "name": "اصايل الجبر",
     "grade": "سابع",
-    "division": "ب",
+    "division": "أ",
     "links": [
-      "https://drive.google.com/file/d/EdvrMNiMHOHodf57wN8Q/view?usp=sharing",
-      "https://drive.google.com/file/d/gbvT1XeWTX0mF2QB6uEg/view?usp=sharing"
+      "https://www.canva.com/design/DAHD9HdLr_s/BXtjMjAa_mIZMKrTTu2HKQ/edit?utm_content=DAHD9HdLr_s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHD9S87njI/AudflP0NqRQ9eksMiQbIBA/edit?utm_content=DAHD9S87njI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|ريماس",
-    "name": "ريماس",
+    "id": "سابع|بيسان نادر عبد الرحيم حسين",
+    "name": "بيسان نادر عبد الرحيم حسين",
     "grade": "سابع",
     "division": "ب",
     "links": [
-      "https://drive.google.com/file/d/hLp3vLhevi65Auy3ns9z/view?usp=sharing",
-      "https://drive.google.com/file/d/ki6Dmq45GRoLYV0hnxvJ/view?usp=sharing"
+      "https://www.canva.com/design/DAHDZfezVys/SXWizPT6zMr3V3YEZ61E1w/edit?utm_content=DAHDZfezVys&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAG4bawijx4/3jaYziLlkJixtmDn6_9_2A/edit?utm_content=DAG4bawijx4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|طيبة",
-    "name": "طيبة",
+    "id": "سابع|تالا احمد العمري",
+    "name": "تالا احمد العمري",
     "grade": "سابع",
-    "division": "ب",
+    "division": "أ",
     "links": [
-      "https://www.canva.com/design/DAFloq9pHmxfH9b/view",
-      "https://www.canva.com/design/DAFcF5XV1h5pztp/view"
+      "https://www.canva.com/design/DAHD9G0CzJc/-waMpvglKCVL4uVUhO_gmQ/edit?utm_content=DAHD9G0CzJc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHD8kODSWQ/mtSH4DxqaxiYVwcbpF0KlA/edit?utm_content=DAHD8kODSWQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|ندى",
-    "name": "ندى",
+    "id": "سابع|تولين فراس عيسى",
+    "name": "تولين فراس عيسى",
     "grade": "سابع",
     "division": "ب",
     "links": [
-      "https://www.youtube.com/watch?v=Lvc3E3pXuuB"
+      "https://www.canva.com/design/DAHDXftvbJg/lEzXYFwas3Yn2iGtu1bnGg/edit?utm_content=DAHDXftvbJg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://youtu.be/CdxokplFU2g?si=BOa5u8gqLtqUfXHc"
+    ],
+    "notes": "شكرا"
+  },
+  {
+    "id": "سابع|جمانة ابو شميس",
+    "name": "جمانة ابو شميس",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "https://www.canva.com/design/DAHDYFKP5oA/f1MKCkwhVz30uvBCgb88cw/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCQ1BNTVh6Y1Q0NXY5ME4ifX19&utm_content=DAHDYFKP5oA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDiNlEXcQ/QRRI9diIOcNioR8X0-kIiw/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCY1d6MG5ITWJiQ0NqejQifX19&utm_content=DAHDiNlEXcQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|رقية",
-    "name": "رقية",
+    "id": "سابع|جمانة نضال داود ابوسميس",
+    "name": "جمانة نضال داود ابوسميس",
     "grade": "سابع",
     "division": "ب",
     "links": [
-      "https://drive.google.com/file/d/yBKIkHPdY7okElHgQ4Fk/view?usp=sharing",
-      "https://www.youtube.com/watch?v=SAsN76k4aSS"
+      "https://www.canva.com/design/DAHDYFKP5oA/f1MKCkwhVz30uvBCgb88cw/edit?utm_content=DAHDYFKP5oA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDiNlEXcQ/QRRI9diIOcNioR8X0-kIiw/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCY1d6MG5ITWJiQ0NqejQifX19&utm_content=DAHDiNlEXcQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     ],
-    "notes": "سلمت متأخرة"
+    "notes": "عمل طالبة جمانة"
   },
   {
-    "id": "سابع|هديل",
-    "name": "هديل",
+    "id": "سابع|جنى ابراهيم علي ابوشويمه",
+    "name": "جنى ابراهيم علي ابوشويمه",
     "grade": "سابع",
-    "division": "ب",
+    "division": "ج",
     "links": [
-      "https://www.canva.com/design/DAF2obTSoRkd8Lf/view",
-      "https://www.youtube.com/watch?v=5dfnaWSKnyF"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|يارا",
-    "name": "يارا",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/W0MoWIPoIoGHJWAdSN5i/view?usp=sharing",
-      "https://www.canva.com/design/DAFUYcfv7jPr7LD/view"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "سابع|حنان",
-    "name": "حنان",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "  https://docs.google.com/presentation/d/RGhOOCGQqgriQ2nCg0VP/edit?usp=sharing  ",
-      "https://docs.google.com/presentation/d/loL96Tacu2q4MVbXoVr6/edit?usp=sharing"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "سابع|مها",
-    "name": "مها",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAFfdCrnP0Cn92B/view",
-      "https://docs.google.com/presentation/d/L4B99PPur6u94dIQXqBr/edit?usp=sharing",
-      "https://www.canva.com/design/DAFs8aDG63mcnxn/view"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "سابع|نجلاء",
-    "name": "نجلاء",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/zzOEmD9Ypgg7WrnKd6N0/view?usp=sharing"
+      "GoogleDrive",
+      "https://drive.google.com/file/d/1ReTmwfRrh8UuOpN6fRIqtlJtZr89oDhB/view?usp=drivesdk"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|روان",
-    "name": "روان",
+    "id": "سابع|جوري خطاب",
+    "name": "جوري خطاب",
     "grade": "سابع",
-    "division": "ب",
+    "division": "ج",
     "links": [
-      "https://docs.google.com/presentation/d/yXw50ZHp13oLQxwQqVIh/edit?usp=sharing",
-      "https://www.canva.com/design/DAFKaoPhqkr53Q3/view"
+      "https://www.canva.com/design/DAHCvcJjVFs/gxJfOOFdWqeH380Iw3ScPw/edit?utm_content=DAHCvcJjVFs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://youtube.com/shorts/XkkC_YmPI3w?si=Kwy6OmJK0xhkCAtW"
     ],
     "notes": ""
   },
   {
-    "id": "سابع|ضحى",
-    "name": "ضحى",
+    "id": "سابع|جوري فراس عودة الله",
+    "name": "جوري فراس عودة الله",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHDpkX3HXE/qvY64ZsH7YzQldwz__qDuA/edit?utm_content=DAHDpkX3HXE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://youtu.be/nBVbGQ3J1vA?si=7ZFb5IZy0GQ0dqHR"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|حلا أحمد شحده أبو غيث",
+    "name": "حلا أحمد شحده أبو غيث",
     "grade": "سابع",
     "division": "ب",
+    "links": [
+      "https://www.canva.com/design/DAHDeykQ61s/IR0h7m64T7ZBy9SYk3dCOg/edit?utm_content=DAHDeykQ61s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDY2GWTlE/2ORrv4dir-5_pJS-L4RGAA/edit?utm_content=DAHDY2GWTlE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|رهف خالد ابو شويمة",
+    "name": "رهف خالد ابو شويمة",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "تم",
+      "Google"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ريتاج سامر خضر الشريف",
+    "name": "ريتاج سامر خضر الشريف",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://docs.google.com/document/d/12cL28eq0lb5PnJ-brzRwqjTERXrkc7J8eTUSJ6J_rfU/edit?usp=drivesdk",
+      "https://www.canva.com/design/DAHD2pRpw_Y/9I151YZKjp9jPOvx1BJRCQ/edit?utm_content=DAHD2pRpw_Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": "فيديو كانفا  شاركته على ستوري الانستغرام رابط مو فيديو لانه ما قبل ينزل."
+  },
+  {
+    "id": "سابع|ريفان اشرف ابو غوش",
+    "name": "ريفان اشرف ابو غوش",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHD0jaVzww/irqRHUhVIma1VFZVgrReVw/edit?utm_content=DAHD0jaVzww&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ريناد بدر القرنة",
+    "name": "ريناد بدر القرنة",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHD8qhAw80/RVw3weDOrAVf8Xv6FdUkpw/edit?utm_content=DAHD8qhAw80&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": "مس ريم 😘أنا ماعرفت شو يعني رابط الوثيقة 🪷♥️🩵"
+  },
+  {
+    "id": "سابع|زينب علي بديع خليل",
+    "name": "زينب علي بديع خليل",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://docs.google.com/document/d/1w_VYWAfiquwLYNd2bMA7mfq9d3uqO9D-FQb5aPiKCHs/edit?usp=drivesdk",
+      "https://www.canva.com/design/DAHD9MM5zbs/0HwBExdy_l5i5wKEk9-GWQ/edit?utm_content=DAHD9MM5zbs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|سالي فادي الأمير",
+    "name": "سالي فادي الأمير",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://www.canva.com/design/DAHEDEZ3Qco/fHFUdb_hEAsU8msl45BdLg/edit?utm_content=DAHEDEZ3Qco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|سدين محمد العناتي",
+    "name": "سدين محمد العناتي",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://docs.google.com/document/d/1dQZgiDoWiXmAy5tutOEFvGH2_S8vX8xFI_2d3Arveog/edit?usp=drivesdk",
+      "https://www.canva.com/design/DAHDvi4yGxU/ur6AHXDytIh4DdUeMy5POA/edit?utm_content=DAHDvi4yGxU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|سلسبيل وائل",
+    "name": "سلسبيل وائل",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHD_c1w8_E/Yp4k-q8A3DGC897pdW3k7w/edit?utm_content=DAHD_c1w8_E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|سلمى مراد أحمد الطنبور",
+    "name": "سلمى مراد أحمد الطنبور",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "Salma Murad"
+    ],
+    "notes": "مشروع المواطنة الرقمية"
+  },
+  {
+    "id": "سابع|سلمى مراد احمد الطنبور",
+    "name": "سلمى مراد احمد الطنبور",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "Salma Murad"
+    ],
+    "notes": "مشروع المواطنة الرقمية"
+  },
+  {
+    "id": "سابع|سلمى موفق عبد الكريم ابو هاني",
+    "name": "سلمى موفق عبد الكريم ابو هاني",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHD-NZI_E8/3ky_GYCFLm1BIwf3_NrL1g/edit?utm_content=DAHD-NZI_E8&�paign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHD99W7Wos/cTr0CFNX7N6Xt444NXDjNA/edit?utm_content=DAHD99W7Wos&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|سما سمير عابد",
+    "name": "سما سمير عابد",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://docs.google.com/document/d/1OMso4e6NM9NTdoiWVsuBTDtUh7adupaw4-2XLC92_VQ/edit?usp=drivesdk",
+      "https://www.canva.com/design/DAHDvfuG9XA/2sxm4dXLFoluhGmpoDsucA/edit?utm_content=DAHDvfuG9XA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|شهد أمجد عبد الحافظ السرخي",
+    "name": "شهد أمجد عبد الحافظ السرخي",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "https://www.canva.com/design/DAHDyYRN6po/taWZBNtAX0NlSM8D2MilMg/edit?utm_content=DAHDyYRN6po&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDylwoQB0/bhtLkvQq4mltAA8e9ihjeA/edit?utm_content=DAHDylwoQB0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|غزل محمد زهير سعد",
+    "name": "غزل محمد زهير سعد",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHDc-s-Tvw/RoMiMYQLefY_r_pNUgGmHg/edit?utm_content=DAHDc-s-Tvw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|لميس محمد جمال الشايب",
+    "name": "لميس محمد جمال الشايب",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://drive.google.com/file/d/1kv6ZZ0T-2dkzz_nipHb5pQE6jXMNO_F5/view?usp=drivesdk"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ليلى شعلان",
+    "name": "ليلى شعلان",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "https://drive.google.com/file/d/1r8UhX0l8bpBgauvtx_jjTkc0Nha-lCuU/view?usp=drivesdk",
+      "https://drive.google.com/file/d/1rLXB5Lpg5Kaag_g4nLbq5RRMMN1O6PUU/view?usp=drivesdk"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|لين خليل أبو هشهش",
+    "name": "لين خليل أبو هشهش",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://docs.google.com/presentation/d/10nXbIfsvLCxLSYAKWBZiXB4VdnbY_wAVqivmJzDSIuo/edit?usp=drivesdk",
+      "https://www.canva.com/design/DAHD2NVtJnc/ViY94fScggw1c5OsOvYEFA/edit?ui=eyJEIjp7IlQiOnsiQSI6IlBCckR0NkdmcUdxd2ZuMnIifX19&utm_content=DAHD2NVtJnc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|لينة محمد إبراهيم مشتهى",
+    "name": "لينة محمد إبراهيم مشتهى",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHD9NwFbc0/HoJ6RHhqC7ONdWcJeHzzSQ/watch?utm_content=DAHD9NwFbc0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0513f4a945"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|مايا ابراهيم محمود الرجبي",
+    "name": "مايا ابراهيم محمود الرجبي",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://docs.google.com/document/d/11Yyn8g-hTBCNctJcsrn7gy3iKX3whl0VR-a2WnYciXc/edit?usp=drivesdk",
+      "https://www.canva.com/design/DAHD2dFhEWE/kZ5ldyICsdfMsjAHcKogTQ/edit?utm_content=DAHD2dFhEWE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ملاك مالك",
+    "name": "ملاك مالك",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHDXxsTXPI/tKFuzW0JQVBMmT0d5RqFzA/edit?utm_content=DAHDXxsTXPI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDXsBLic0/TLlD92GtvFVZcZAzkIQJGQ/edit?utm_content=DAHDXsBLic0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ملاك مالك الشيخ",
+    "name": "ملاك مالك الشيخ",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHDXxsTXPI/tKFuzW0JQVBMmT0d5RqFzA/edit?utm_content=DAHDXxsTXPI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDXsBLic0/TLlD92GtvFVZcZAzkIQJGQ/edit?utm_content=DAHDXsBLic0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ميار عمار",
+    "name": "ميار عمار",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "https://docs.google.com/document/d/1D9iAOsePJ_5k4PWIBGOfCSNViMdSVja5KS2_8pdR5c4/edit?usp=drivesdk&usp=embed_facebook",
+      "https://www.canva.com/design/DAHDvfuG9XA/2sxm4dXLFoluhGmpoDsucA/edit?utm_content=DAHDvfuG9XA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ميرا عاهد غازي طعمه",
+    "name": "ميرا عاهد غازي طعمه",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "نعم مفتوح",
+      "Cenva"
+    ],
+    "notes": "لا يوجد ملاحظات"
+  },
+  {
+    "id": "سابع|ميس يحيى محمود القاضي",
+    "name": "ميس يحيى محمود القاضي",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHDwlGXoaM/SXdxmIw_irRGRBGaHrOsJg/view?utm_content=DAHDwlGXoaM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h64023fe9af",
+      "https://youtube.com/shorts/33OwC4unbxo?si=V_X4vnKiwYF5WgNe"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|ميناس حمزه محمود النجيلي",
+    "name": "ميناس حمزه محمود النجيلي",
+    "grade": "سابع",
+    "division": "أ",
+    "links": [
+      "https://www.canva.com/design/DAHDZTWCkSI/ArrcGUYGGCW54BFtNcWyxw/edit?utm_content=DAHDZTWCkSI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://www.canva.com/design/DAHDZTirIHU/Ma6dlSQzELPVrIlLGgb_Rg/edit?utm_content=DAHDZTirIHU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "سابع|نتلي باسل محمد الامير",
+    "name": "نتلي باسل محمد الامير",
+    "grade": "سابع",
+    "division": "ب",
+    "links": [
+      "https://docs.google.com/document/d/1q7LLsgz-I1ZZqok9VMiy5XmGOhFdFx2fphCF0VbT_5U/edit?usp=drivesdk",
+      "https://www.capcut.com/tv2/ZSuSMYBJb/"
+    ],
+    "notes": "نشرتى انستا"
+  },
+  {
+    "id": "سابع|يمنى طعمة",
+    "name": "يمنى طعمة",
+    "grade": "سابع",
+    "division": "ج",
+    "links": [
+      "https://www.canva.com/design/DAHDltu8IKQ/W_zieeWMGKGzqGLUMH0fEQ/edit?utm_content=DAHDltu8IKQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://v.inshot.com/invite"
+    ],
+    "notes": "بالنسبة للفيديو، فقد قمتُ بإعداده ومونتاجه بالكامل عبر تطبيق (InShot)، ولم أتمكن من رفعه على منصة اليوتيوب لعدم توفر هاتف خاص بي حالياً، لذا اعتمدتُ على المعالجة المحلية للفيديو لضمان تقديمه لكم بأفضل جودة ممكنة"
+  },
+  {
+    "id": "ثامن|.جود محمد الصباغ",
+    "name": ".جود محمد الصباغ",
+    "grade": "ثامن",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "سابع|مآب",
-    "name": "مآب",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "  https://docs.google.com/presentation/d/WnNjJVRem4gf9Zf4Bac5/edit?usp=sharing  ",
-      "https://drive.google.com/file/d/eILuARIaZEP4ptXUWk6y/view?usp=sharing",
-      "https://www.youtube.com/watch?v=4mH3v8bydtS"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "سابع|يسرا",
-    "name": "يسرا",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAFGvXe3yUgwHLb/view"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "سابع|هيا",
-    "name": "هيا",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/ZL23SOWQoNY5EsUpw5p1/edit?usp=sharing",
-      "https://drive.google.com/file/d/rohlmNbl9w3CaweUqqcr/view?usp=sharing"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "سابع|يمنى",
-    "name": "يمنى",
-    "grade": "سابع",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/lKjFuPK2JUOcLxaNZvw2/view?usp=sharing",
-      "https://www.canva.com/design/DAFjomcKPCQbFC1/view",
-      "https://www.canva.com/design/DAFDIEM7n9leZjV/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|بثينة",
-    "name": "بثينة",
+    "id": "ثامن|Ghazl Omar Alomar",
+    "name": "Ghazl Omar Alomar",
     "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "  https://www.youtube.com/watch?v=Zs1yJGLVuKX  ",
-      "https://docs.google.com/presentation/d/9JfLY40hP8uPOfRfHDeh/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|نورا",
-    "name": "نورا",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=MzYJPAcapaJ",
-      "https://docs.google.com/presentation/d/CRhtiUimwlek40h92Iru/edit?usp=sharing",
-      "https://drive.google.com/file/d/3q5vQs8lKRZFMaVJZRvD/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|درة",
-    "name": "درة",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/nHHICmFViMsZF1edbBps/view?usp=sharing",
-      "https://drive.google.com/file/d/KE1AqNO5M0jjJnoXziCf/view?usp=sharing",
-      "https://docs.google.com/presentation/d/6goRRiGNEpQFGBNNxrPg/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|وردة",
-    "name": "وردة",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/UGMNiyEX79w9bnskM7UH/edit?usp=sharing",
-      "https://www.youtube.com/watch?v=p4aEWGBSRcH"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|لمار",
-    "name": "لمار",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFTGmyLuXP2mun/view"
-    ],
-    "notes": "تحتاج متابعة"
-  },
-  {
-    "id": "ثامن|جمانة",
-    "name": "جمانة",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/d3YbIasR25bEadeRlWVP/view?usp=sharing",
-      "https://www.youtube.com/watch?v=SrrhYnoNNmz",
-      "https://docs.google.com/presentation/d/rXE6gX6k03iSrUtDvVkF/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|أريج",
-    "name": "أريج",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=DsucuZzNBZN",
-      "https://www.canva.com/design/DAF7jj9OXXqlvVh/view"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|شذى",
-    "name": "شذى",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFqirU4fxKAWdY/view"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|عبير",
-    "name": "عبير",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=BMn1Kguwc2H",
-      "https://drive.google.com/file/d/9Itlqzug6SjA6nvQKq59/view?usp=sharing"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|ياسمين",
-    "name": "ياسمين",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=zY0mItU5250",
-      "https://www.canva.com/design/DAF1nx6LJHCgLRV/view"
-    ],
-    "notes": "تحتاج متابعة"
-  },
-  {
-    "id": "ثامن|رنا",
-    "name": "رنا",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=8x74PRCacG9",
-      "https://www.canva.com/design/DAFImInzarrAp5v/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|سراب",
-    "name": "سراب",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=T6GQ8AEBufn",
-      "https://www.canva.com/design/DAFhxCAD8H0oIw0/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|سارة",
-    "name": "سارة",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "  https://docs.google.com/presentation/d/jg0Nor3tQRa5V7CCIV0u/edit?usp=sharing  ",
-      "https://docs.google.com/presentation/d/5mo0HhloJpd020IH6xLY/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|منار",
-    "name": "منار",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "  https://www.youtube.com/watch?v=J7FURcjpK2v  ",
-      "https://www.youtube.com/watch?v=TiZOL25wyzX",
-      "https://drive.google.com/file/d/HoSQQ1vmIcOdlu2vZylO/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|سدرة",
-    "name": "سدرة",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "YouTube"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|لطيفة",
-    "name": "لطيفة",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=dR9vHe58sZq",
-      "https://www.canva.com/design/DAFtmfcdPLmPvzt/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|وعد",
-    "name": "وعد",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/iK9Y9M8fpu8QsKnDXAp5/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|نوران",
-    "name": "نوران",
-    "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/K6x0C6742R6PofQoTdMr/view?usp=sharing",
-      "https://docs.google.com/presentation/d/AUCipPRoeHMmMTohy6cN/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|صابرين",
-    "name": "صابرين",
-    "grade": "ثامن",
-    "division": "أ",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "ثامن|أمل",
-    "name": "أمل",
+    "id": "ثامن|آرام إبراهيم عزت عبد الكريم",
+    "name": "آرام إبراهيم عزت عبد الكريم",
     "grade": "ثامن",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/b32stZJwA0wKYJX4a4DI/view?usp=sharing",
-      "https://drive.google.com/file/d/DidnrGnSjgeDNHn9gaLZ/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|ريم",
-    "name": "ريم",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=TGYwxCgiokt",
-      "https://www.canva.com/design/DAFshaPc9ILnkSi/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|لينا",
-    "name": "لينا",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/e2HlexQGIO4DqC2wWpTS/edit?usp=sharing",
-      "https://www.canva.com/design/DAFC0MBJA7QMVbW/view",
-      "https://drive.google.com/file/d/QzdXat5QHxNIqcGiaAju/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|هنا",
-    "name": "هنا",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/nQk6LiiLQufrcGbefqt9/view?usp=sharing",
-      "https://www.canva.com/design/DAF1KQ1hdYLrgmT/view"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|إيمان",
-    "name": "إيمان",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=rFsN4UocZKw",
-      "https://www.youtube.com/watch?v=4fg0ZTtbVMO",
-      "https://www.youtube.com/watch?v=t7SsJsWvgZd"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|نسرين",
-    "name": "نسرين",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/EeaEjdHFJWJgv5TSDEFp/view?usp=sharing",
-      "https://www.youtube.com/watch?v=FZFbp9JZeYE"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|بشرى",
-    "name": "بشرى",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAF38o0LSRLUcUy/view",
-      "https://drive.google.com/file/d/uKnspCWfZNUFRm33yU3l/view?usp=sharing",
-      "https://drive.google.com/file/d/5awp2UIF7HQqRh4y08Qy/view?usp=sharing"
-    ],
-    "notes": "تحتاج متابعة"
-  },
-  {
-    "id": "ثامن|سلسبيل",
-    "name": "سلسبيل",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/ka8UQSQ2PzlrOaBxILZ4/edit?usp=sharing",
-      "https://drive.google.com/file/d/x4yZAAnZeYc2xB1av1Db/view?usp=sharing"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|سمر",
-    "name": "سمر",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/fMHpTmvrUvEYZBrcw9gK/view?usp=sharing",
-      "https://www.canva.com/design/DAFWOmMqZazM40V/view"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "ثامن|حلا",
-    "name": "حلا",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/xW9xrbiRFEaUT7KFmvyH/edit?usp=sharing",
-      "https://www.canva.com/design/DAFQCmFExVC5MhD/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|معالي",
-    "name": "معالي",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/PNqKsMtUWAXkh5a7BgEv/view?usp=sharing",
-      "https://drive.google.com/file/d/ad1jWAGwmpquOHk8ebYK/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|ليان",
-    "name": "ليان",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=qz8iWE5J66A"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|أمنية",
-    "name": "أمنية",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=upHPNA50XEm",
-      "https://docs.google.com/presentation/d/u82Q3IjEbe2MJP1ulHG7/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|تسنيم",
-    "name": "تسنيم",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "  https://www.canva.com/design/DAFZMlKCWan7JFs/view  "
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|سهام",
-    "name": "سهام",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/6Q0MGGYlTbkC2HP6gayV/view?usp=sharing",
-      "https://docs.google.com/presentation/d/Whfa5GqyjaKg2Is10Gfs/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|زمردة",
-    "name": "زمردة",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=ki2ZbLUC143",
-      "https://www.youtube.com/watch?v=NqEqkjU78Se"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "ثامن|صفاء",
-    "name": "صفاء",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=z6SOw6PUVdT",
-      "https://www.canva.com/design/DAFkpQ6aK4fe776/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|بتول",
-    "name": "بتول",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/hyQJXWujLjMoway750T4/view?usp=sharing"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "ثامن|قمر",
-    "name": "قمر",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/wqPGh7m74T2Iinn2A7J8/view?usp=sharing",
-      "https://docs.google.com/presentation/d/7s8b2G0rtoDvvLUXgdn5/edit?usp=sharing"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "ثامن|شيرين",
-    "name": "شيرين",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAFdDFXuADH4HKd/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|شهد",
-    "name": "شهد",
-    "grade": "ثامن",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAF94SgkKK7x8e1/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "ثامن|براءة",
-    "name": "براءة",
-    "grade": "ثامن",
-    "division": "ب",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "تاسع|محاسن",
-    "name": "محاسن",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/FMzcsLqKdK52DlDvTfmF/edit?usp=sharing",
-      "https://docs.google.com/presentation/d/5tPKcFZckaFdmAQGjUkM/edit?usp=sharing",
-      "https://www.canva.com/design/DAFRuabILYKScn5/view"
-    ],
+    "id": "ثامن|إيمان عثمان \"حمدلله\" الكعبي",
+    "name": "إيمان عثمان \"حمدلله\" الكعبي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "تاسع|نجاح",
-    "name": "نجاح",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFnpi1tRkThgIm/view"
-    ],
-    "notes": "تحتاج متابعة"
+    "id": "ثامن|إيمان عثمان\" حمدلله\" الكعبي",
+    "name": "إيمان عثمان\" حمدلله\" الكعبي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
   },
   {
-    "id": "تاسع|ميساء",
-    "name": "ميساء",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFdnZY1HlTz6wU/view",
-      "https://docs.google.com/presentation/d/X0FqzMZsnjC1YmQBn1vR/edit?usp=sharing",
-      "https://drive.google.com/file/d/U2TBtYzsrodCILA84I4C/view?usp=sharing"
-    ],
-    "notes": "سلمت متأخرة"
+    "id": "ثامن|بانا عبدالرحمن ابراهيم محمد",
+    "name": "بانا عبدالرحمن ابراهيم محمد",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
   },
   {
-    "id": "تاسع|رنيم",
+    "id": "ثامن|براء أحمد محمود عكه",
+    "name": "براء أحمد محمود عكه",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|براء أحمد محمود عكه  آخر تعديل",
+    "name": "براء أحمد محمود عكه  آخر تعديل",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|براء أحمد محمود عكه  مشروع حاسوب نهائي",
+    "name": "براء أحمد محمود عكه  مشروع حاسوب نهائي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|بيسان محمد الميمي",
+    "name": "بيسان محمد الميمي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|تسنيم علي منصور",
+    "name": "تسنيم علي منصور",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ثريا داود رمانة",
+    "name": "ثريا داود رمانة",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|جليله محمد احمد الفروخ",
+    "name": "جليله محمد احمد الفروخ",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|حنين أحمد شحده أبو غيث",
+    "name": "حنين أحمد شحده أبو غيث",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ديما خليل الشوابكة",
+    "name": "ديما خليل الشوابكة",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ديما خليل الشوابكة تم التعديل",
+    "name": "ديما خليل الشوابكة تم التعديل",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ديمة مصطفى سلامة أبو حشيش",
+    "name": "ديمة مصطفى سلامة أبو حشيش",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|راما علقم/ ايفين يوسف/ سديل يوسف/ماسة رفقي/بيسان خطاب",
+    "name": "راما علقم/ ايفين يوسف/ سديل يوسف/ماسة رفقي/بيسان خطاب",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|رحمة محمود اسماعيل الشاعر",
+    "name": "رحمة محمود اسماعيل الشاعر",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|رغد بدير",
+    "name": "رغد بدير",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ريتاج محمود حسين الزعبي و نور فارس حسين الزعبي",
+    "name": "ريتاج محمود حسين الزعبي و نور فارس حسين الزعبي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ريتال أحمد حسن السكحفي",
+    "name": "ريتال أحمد حسن السكحفي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ريم خالد وليندا خالد",
+    "name": "ريم خالد وليندا خالد",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ريماس ابو شويمة",
+    "name": "ريماس ابو شويمة",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ريماس محمود كامل عفانه",
+    "name": "ريماس محمود كامل عفانه",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|سارة علي أحمد جبارة",
+    "name": "سارة علي أحمد جبارة",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|سندس عمر ابراهيم",
+    "name": "سندس عمر ابراهيم",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|سندس محمد سليمان ابو شويمة",
+    "name": "سندس محمد سليمان ابو شويمة",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|عائشة عبد جواد محمد اغريب",
+    "name": "عائشة عبد جواد محمد اغريب",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|عائشه عماد عرب و يارا محمد الطيراوي",
+    "name": "عائشه عماد عرب و يارا محمد الطيراوي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|غزل طارق طوير/ نيرمين ابو سمره",
+    "name": "غزل طارق طوير/ نيرمين ابو سمره",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|غنى احمد نبيل الغنمه",
+    "name": "غنى احمد نبيل الغنمه",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|لارين ناصر",
+    "name": "لارين ناصر",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|لين ابراهيم محمد كمش",
+    "name": "لين ابراهيم محمد كمش",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|لين ابو حلتم/جنى عندنان/شهد اسامه/ياسمين مصلح/ميرا خالد",
+    "name": "لين ابو حلتم/جنى عندنان/شهد اسامه/ياسمين مصلح/ميرا خالد",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|لين رائد محمود ابو حلتم",
+    "name": "لين رائد محمود ابو حلتم",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ماريا على خماش",
+    "name": "ماريا على خماش",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ماريان غسان عزت الملاد",
+    "name": "ماريان غسان عزت الملاد",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|مريم ،لجين،ديمه",
+    "name": "مريم ،لجين،ديمه",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|مريم رمضان",
+    "name": "مريم رمضان",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|مريم.لجين.ديمه",
+    "name": "مريم.لجين.ديمه",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|ميرنا حسن محمد خيري",
+    "name": "ميرنا حسن محمد خيري",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ثامن|نور فارس الزعبي و ريتاج محمود الزعبي",
+    "name": "نور فارس الزعبي و ريتاج محمود الزعبي",
+    "grade": "ثامن",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|https://www.canva.com/design/DAHEHdE9tWI/L2nRJ7el7cc-PKKDAv6Q9w/watch?utm_content=DAHEHdE9tWI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h036c357d22",
+    "name": "https://www.canva.com/design/DAHEHdE9tWI/L2nRJ7el7cc-PKKDAv6Q9w/watch?utm_content=DAHEHdE9tWI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h036c357d22",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|أيناس حسام شحاده جمول",
+    "name": "أيناس حسام شحاده جمول",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|إيناس ابراهيم خليل حسين",
+    "name": "إيناس ابراهيم خليل حسين",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|بيان نائل المريدي",
+    "name": "بيان نائل المريدي",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|بيسان خالد",
+    "name": "بيسان خالد",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|تالين خالد العناتي",
+    "name": "تالين خالد العناتي",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|تالين محمود ابو غلوس",
+    "name": "تالين محمود ابو غلوس",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|تسنيم وحيد مشاري معلا",
+    "name": "تسنيم وحيد مشاري معلا",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|جمانة بدير",
+    "name": "جمانة بدير",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|جنى عائد فرحات انعيم",
+    "name": "جنى عائد فرحات انعيم",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|خديجة هاشم العجوري",
+    "name": "خديجة هاشم العجوري",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|دانا احمد البابلي",
+    "name": "دانا احمد البابلي",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|رحمه احمد محمد المساعفه",
+    "name": "رحمه احمد محمد المساعفه",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|رغد أحمد زايد",
+    "name": "رغد أحمد زايد",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|رغد ابراهيم الحنش",
+    "name": "رغد ابراهيم الحنش",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|رغد احمد إسماعيل اشنينة",
+    "name": "رغد احمد إسماعيل اشنينة",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|رفيف محمود خليل",
+    "name": "رفيف محمود خليل",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ريتال احمد عفانة",
+    "name": "ريتال احمد عفانة",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ريماس رمضان",
+    "name": "ريماس رمضان",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|سارة ناصر ابو شنار",
+    "name": "سارة ناصر ابو شنار",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ساره محمد عبد الرحيم حسين",
+    "name": "ساره محمد عبد الرحيم حسين",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|سديل نزار نعيم الهرش",
+    "name": "سديل نزار نعيم الهرش",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|سلوي أحمد طلال",
+    "name": "سلوي أحمد طلال",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|صفاء همام يحيى الصويص",
+    "name": "صفاء همام يحيى الصويص",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|غدير ايمن يونس عودة",
+    "name": "غدير ايمن يونس عودة",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|لجين محمود حسين الزعبي",
+    "name": "لجين محمود حسين الزعبي",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|لين علي جبارة",
+    "name": "لين علي جبارة",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|مديحه عبدالله الواكد",
+    "name": "مديحه عبدالله الواكد",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ميس الخطيب",
+    "name": "ميس الخطيب",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ندى عمار محمود الناصر",
+    "name": "ندى عمار محمود الناصر",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ندى عمر ابراهيم",
+    "name": "ندى عمر ابراهيم",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|هبه ابراهيم الحايك",
+    "name": "هبه ابراهيم الحايك",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|هبه بسام عبدالله",
+    "name": "هبه بسام عبدالله",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|يارا عمر فيري",
+    "name": "يارا عمر فيري",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|يارا وليد الزهيري",
+    "name": "يارا وليد الزهيري",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ياسمين حامد ابو سمرة",
+    "name": "ياسمين حامد ابو سمرة",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "تاسع|ياسمين عدنان البدوي",
+    "name": "ياسمين عدنان البدوي",
+    "grade": "تاسع",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|Tala Fawzi",
+    "name": "Tala Fawzi",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|انوار محمد احمد الفروخ",
+    "name": "انوار محمد احمد الفروخ",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|ايمان محمد رشيد",
+    "name": "ايمان محمد رشيد",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|براءة عدنان الحوامدة",
+    "name": "براءة عدنان الحوامدة",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|تالا احمد زمري",
+    "name": "تالا احمد زمري",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|تولين زكريا",
+    "name": "تولين زكريا",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|حلا احمد حمودة",
+    "name": "حلا احمد حمودة",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|حلا نصر الله محمد سيد أحمد",
+    "name": "حلا نصر الله محمد سيد أحمد",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|دانا مروان مكحل",
+    "name": "دانا مروان مكحل",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|دينا محمد الحيارات",
+    "name": "دينا محمد الحيارات",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|رؤى فراس ابو قاسم",
+    "name": "رؤى فراس ابو قاسم",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|رغد محمد سعادة و رانيا أمجد جندية",
+    "name": "رغد محمد سعادة و رانيا أمجد جندية",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|رفيف أحمد وسهام الشلبي",
+    "name": "رفيف أحمد وسهام الشلبي",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|رفيف محمد وهبة عاشور",
+    "name": "رفيف محمد وهبة عاشور",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|رنيم",
     "name": "رنيم",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=Ws8vJclvQfC",
-      "https://www.canva.com/design/DAF224TI0JdZAT2/view",
-      "https://www.youtube.com/watch?v=1rZ0McXVGlk"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|هالة",
-    "name": "هالة",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=8bywSHPpr4l",
-      "https://drive.google.com/file/d/FmG8LrskwKOVVsWq9h4p/view?usp=sharing"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "تاسع|فداء",
-    "name": "فداء",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "Canva"
-    ],
-    "notes": "سلمت متأخرة"
-  },
-  {
-    "id": "تاسع|ديما",
-    "name": "ديما",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "تاسع|أسيل",
-    "name": "أسيل",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAF7bytte1Nj4XI/view",
-      "https://www.youtube.com/watch?v=tHwAtMeMhXR",
-      "https://www.canva.com/design/DAF6wB6zebzwuDR/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|ذهبية",
-    "name": "ذهبية",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/cmk43YdWP665oeuPFeEO/edit?usp=sharing",
-      "https://www.youtube.com/watch?v=C72lNEEvgjK"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|عهد",
-    "name": "عهد",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "Canva"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "تاسع|تهاني",
-    "name": "تهاني",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=kSKkvlD8yTP",
-      "https://www.youtube.com/watch?v=iNWFiQf5bHG"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|لبنى",
-    "name": "لبنى",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/m3DbW2iJf48s8Q6wQlIG/edit?usp=sharing",
-      "https://www.canva.com/design/DAFrhFvR0UEgEVU/view"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "تاسع|مشيرة",
-    "name": "مشيرة",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFCfUDnGvOBs5Y/view",
-      "https://docs.google.com/presentation/d/dQHZfPxhau9baNsMafKy/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|هاجر",
-    "name": "هاجر",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=nwYhy5f1Uux"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|فريدة",
-    "name": "فريدة",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/ELhXg9W7EC0DykyVexV7/view?usp=sharing",
-      "https://docs.google.com/presentation/d/G2F4FbkurH3MwpI7pMcq/edit?usp=sharing"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "تاسع|تالا",
-    "name": "تالا",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/OXbXGMEhKFeD8Kb7RBNn/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|دانا",
-    "name": "دانا",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=VvzFbHhUfuz",
-      "https://www.youtube.com/watch?v=quzI5HhwYSa",
-      "https://docs.google.com/presentation/d/pl2qtfvSqRDnt7G5Z1gX/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|غدير",
-    "name": "غدير",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFV0aKXf4qSe86/view",
-      "https://drive.google.com/file/d/RuHoLMA8qMLdrNhojHp7/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|ولاء",
-    "name": "ولاء",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/kGOhtVS0lIRv8NE8fWXd/view?usp=sharing",
-      "https://docs.google.com/presentation/d/n48Syrv5P0SEZQ8xQ6hc/edit?usp=sharing",
-      "https://docs.google.com/presentation/d/7XzxetutaQz7fi7QBOz3/edit?usp=sharing"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "تاسع|إسراء",
-    "name": "إسراء",
-    "grade": "تاسع",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/W1YwhFOfF4zmQvQaTfb3/edit?usp=sharing",
-      "https://www.youtube.com/watch?v=OR4hc60X9EF",
-      "https://www.youtube.com/watch?v=0MhcuKZW4Bx"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|جود",
-    "name": "جود",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=P0ynNNpG2hq"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|نهى",
-    "name": "نهى",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=adtaguVyvBh",
-      "https://www.youtube.com/watch?v=Yxfvij7Bzgw"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "تاسع|رواء",
-    "name": "رواء",
-    "grade": "تاسع",
-    "division": "ب",
+    "grade": "عاشر",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "تاسع|سلوى",
-    "name": "سلوى",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "  https://www.canva.com/design/DAFsXmKwSIQJUKM/view  ",
-      "https://www.youtube.com/watch?v=VrimgnJvg1o"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|تقوى",
-    "name": "تقوى",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=LqukKWrvLNp"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|نادية",
-    "name": "نادية",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/CK1ApmWypjrLQsO2CWHj/view?usp=sharing",
-      "https://drive.google.com/file/d/pIYqx9dNZGC23FJw07ZU/view?usp=sharing"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "تاسع|سندس",
-    "name": "سندس",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=90BPmjluEyL"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|وجدان",
-    "name": "وجدان",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "رابط المشروع"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "تاسع|تمارا",
-    "name": "تمارا",
-    "grade": "تاسع",
-    "division": "ب",
+    "id": "عاشر|رهف ابراهيم الحنش",
+    "name": "رهف ابراهيم الحنش",
+    "grade": "عاشر",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "تاسع|تغريد",
-    "name": "تغريد",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "  https://www.youtube.com/watch?v=cjUhxcE9v5i  "
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|ذكرى",
-    "name": "ذكرى",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "  https://drive.google.com/file/d/GaXHvEc7AeA3FiYXacPR/view?usp=sharing  "
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|هبة",
-    "name": "هبة",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAFVIuVubB7U66z/view",
-      "https://www.canva.com/design/DAFiwGuPdRvXvBU/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|نجوى",
-    "name": "نجوى",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=4dsqDTrXLUd"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "تاسع|كنزة",
-    "name": "كنزة",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAF7T3YwFvkBotI/view"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "تاسع|غادة",
-    "name": "غادة",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=aOzctzcJ1oJ"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|رغد",
-    "name": "رغد",
-    "grade": "تاسع",
-    "division": "ب",
+    "id": "عاشر|رهف الحنش",
+    "name": "رهف الحنش",
+    "grade": "عاشر",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "تاسع|حنين",
-    "name": "حنين",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/d8nazwWJ9q9wWO07fj9Q/view?usp=sharing"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "تاسع|آية",
-    "name": "آية",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/CR2s4ydhMihckXjVf6nO/edit?usp=sharing",
-      "https://www.canva.com/design/DAFqco88xP2i5df/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|هيفاء",
-    "name": "هيفاء",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/d6plMgtkXDJtZE89zdSw/edit?usp=sharing",
-      "https://drive.google.com/file/d/tr1DMiPc4gL6NwaTzcVO/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "تاسع|نسمة",
-    "name": "نسمة",
-    "grade": "تاسع",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=bVMUNaCgQaL",
-      "https://docs.google.com/presentation/d/w9bHj8Vp01RwcyDQmXlv/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|يقين",
-    "name": "يقين",
+    "id": "عاشر|ريتاج يوسف",
+    "name": "ريتاج يوسف",
     "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/T7tu5KZBTkdDgD9wfxu8/view?usp=sharing",
-      "https://www.canva.com/design/DAFFjUWCOJ7jtL3/view",
-      "https://www.youtube.com/watch?v=2KUhFgx7u5r"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "عاشر|عنود",
-    "name": "عنود",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=b7q7nv5UIlC"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|ميس",
-    "name": "ميس",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/rX2hPopo6UzzzvlGwGCr/edit?usp=sharing",
-      "https://drive.google.com/file/d/RHzAONtVXRmmQ6pmzVjk/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|رابعة",
-    "name": "رابعة",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=yzpXB3fZlFy",
-      "https://docs.google.com/presentation/d/cex2MtGXicE7mx8qULEo/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|سحر",
-    "name": "سحر",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/jwI4DSbbRLs2bC8irJu0/view?usp=sharing",
-      "https://www.canva.com/design/DAFPItM9PchxObt/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|عبلة",
-    "name": "عبلة",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/6jRXDxKzFsBKgQqavJe0/view?usp=sharing"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "عاشر|دانية",
-    "name": "دانية",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/f6P6O3wWiRI2oiImrTpd/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|ملاك",
-    "name": "ملاك",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "  https://www.youtube.com/watch?v=DKpFo1VckUS  ",
-      "https://www.youtube.com/watch?v=1zC26mZidc6"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|ملك",
-    "name": "ملك",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFlPVnk3N6DtCd/view"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|هدى",
-    "name": "هدى",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "  https://www.canva.com/design/DAFh8DDE13xh5lP/view  "
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|جنى",
-    "name": "جنى",
-    "grade": "عاشر",
-    "division": "أ",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|بيان",
-    "name": "بيان",
+    "id": "عاشر|ريتال محمد علقم",
+    "name": "ريتال محمد علقم",
     "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "  https://docs.google.com/presentation/d/J2u21w0kzXh4P7gw0CkK/edit?usp=sharing  ",
-      "https://docs.google.com/presentation/d/aiRSZ5eSRRXJGmCrXDfU/edit?usp=sharing",
-      "https://drive.google.com/file/d/MknTssYmNutoRhDK8MKS/view?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|هنادي",
-    "name": "هنادي",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://drive.google.com/file/d/fDCvek8P0lpeOWoLQ82y/view?usp=sharing",
-      "https://www.youtube.com/watch?v=GcjjoKqzRvk"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|لارا",
-    "name": "لارا",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=4x78ZBimuJU",
-      "https://docs.google.com/presentation/d/1Q1zGtmT0n8SZakxSrz4/edit?usp=sharing"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|لجين",
-    "name": "لجين",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "عاشر|منال",
-    "name": "منال",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://www.youtube.com/watch?v=xjMzeirqozE"
-    ],
-    "notes": ""
-  },
-  {
-    "id": "عاشر|أفنان",
-    "name": "أفنان",
-    "grade": "عاشر",
-    "division": "أ",
+    "division": "",
     "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|فرح",
-    "name": "فرح",
+    "id": "عاشر|ريماس ابراهيم الرجبي",
+    "name": "ريماس ابراهيم الرجبي",
     "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://docs.google.com/presentation/d/N0cMrxblQfb037NtEzjZ/edit?usp=sharing",
-      "https://drive.google.com/file/d/OS36h9kU1DRGDGBJDoWY/view?usp=sharing"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "عاشر|جيهان",
-    "name": "جيهان",
-    "grade": "عاشر",
-    "division": "أ",
-    "links": [
-      "https://www.canva.com/design/DAFJs4bkjnbUHaT/view"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|ناديا",
-    "name": "ناديا",
+    "id": "عاشر|ريماس وادي",
+    "name": "ريماس وادي",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/a8EVossWDwi0Czgw5xbH/view?usp=sharing",
-      "https://www.youtube.com/watch?v=iQ32oEf2ybU"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "عاشر|خديجة",
-    "name": "خديجة",
-    "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/tqfQNzA1mhbCLf2nqSEy/edit?usp=sharing"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|غفران",
-    "name": "غفران",
+    "id": "عاشر|زين باسل الامير",
+    "name": "زين باسل الامير",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/OkBllUG6fLXnqv1aprwb/view?usp=sharing",
-      "https://www.youtube.com/watch?v=rnGwRGoeX2l",
-      "https://docs.google.com/presentation/d/9LtjM53qx4Ce4h6qyRFq/edit?usp=sharing"
-    ],
-    "notes": "سلمت متأخرة"
-  },
-  {
-    "id": "عاشر|شيماء",
-    "name": "شيماء",
-    "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAFiQBymVKTbKAE/view",
-      "https://www.canva.com/design/DAFxkENMJPyFVNx/view",
-      "https://www.canva.com/design/DAF9zd3LQPVfivP/view"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|خولة",
-    "name": "خولة",
+    "id": "عاشر|سهاد فادي الأمير /غزل بشير",
+    "name": "سهاد فادي الأمير /غزل بشير",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=btdgFlF8Rdl",
-      "https://docs.google.com/presentation/d/1zGpkT06ySsi6p2nlUTO/edit?usp=sharing"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|آلاء",
-    "name": "آلاء",
+    "id": "عاشر|شهد فضل",
+    "name": "شهد فضل",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/ZVuPkXiQlZw6aRKGIAp4/edit?usp=sharing",
-      "https://drive.google.com/file/d/r5vEZIwkieaS7kSDzhpC/view?usp=sharing"
-    ],
-    "notes": "الرابط لا يعمل"
-  },
-  {
-    "id": "عاشر|نورهان",
-    "name": "نورهان",
-    "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/vPLDD1yTRvnNB3BZPEct/view?usp=sharing",
-      "https://www.canva.com/design/DAFtnWfhplZVxPk/view"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|رحمة",
-    "name": "رحمة",
+    "id": "عاشر|عروب غيث",
+    "name": "عروب غيث",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://docs.google.com/presentation/d/LxFle1YhnGrUo9RSv4NJ/edit?usp=sharing",
-      "https://www.canva.com/design/DAFFV3FJ14dJv4K/view"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|رزان",
-    "name": "رزان",
+    "id": "عاشر|عنود الجبر",
+    "name": "عنود الجبر",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/5mSUZ9WXh8e0OFTx0IoX/view?usp=sharing"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|وفاء",
-    "name": "وفاء",
+    "id": "عاشر|فرح البلابسه ولين البرغوثي",
+    "name": "فرح البلابسه ولين البرغوثي",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=qPmFvVUzvbZ"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|زهراء",
-    "name": "زهراء",
+    "id": "عاشر|لمار درويش الشيخ",
+    "name": "لمار درويش الشيخ",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/CUi8WlbiUoghlMpTaFxG/view?usp=sharing",
-      "https://www.canva.com/design/DAFyeC8SYtY6lbB/view",
-      "https://docs.google.com/presentation/d/93ssgP6dRnQ0DixPWSRj/edit?usp=sharing"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|فاطمة",
-    "name": "فاطمة",
+    "id": "عاشر|ليان خالد العناتي",
+    "name": "ليان خالد العناتي",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "  https://www.canva.com/design/DAFgea0LwZOSw7c/view  ",
-      "https://docs.google.com/presentation/d/lmtLujw9HfnS2rTJW3Kz/edit?usp=sharing",
-      "https://drive.google.com/file/d/PYaUgPtaL41nMLIyZtp2/view?usp=sharing"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|جنان",
-    "name": "جنان",
+    "id": "عاشر|ليان طعمة",
+    "name": "ليان طعمة",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/K3hM7JSOf39aRyTqhk4P/view?usp=sharing"
-    ],
-    "notes": "سلمت على واتساب"
-  },
-  {
-    "id": "عاشر|إباء",
-    "name": "إباء",
-    "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "رابط المشروع"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "عاشر|كوثر",
-    "name": "كوثر",
-    "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://www.canva.com/design/DAFUWewlxXV2mVV/view",
-      "https://docs.google.com/presentation/d/Dg1jbUJiTqclVVlIf3AV/edit?usp=sharing"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|رهف",
-    "name": "رهف",
+    "id": "عاشر|لين الحوامده",
+    "name": "لين الحوامده",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/COUffesVJZLjS7nYzb4a/view?usp=sharing",
-      "https://www.canva.com/design/DAFmxstUlU5SMnU/view",
-      "https://www.youtube.com/watch?v=PWxLBj2Km9Q"
-    ],
-    "notes": "مشروع مميز"
-  },
-  {
-    "id": "عاشر|لمى",
-    "name": "لمى",
-    "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://www.youtube.com/watch?v=MHPaE0HnSeX",
-      "https://www.canva.com/design/DAFWIzitwRcNUHS/view"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|مرام",
-    "name": "مرام",
+    "id": "عاشر|مروى الغفري و رهف خالد",
+    "name": "مروى الغفري و رهف خالد",
     "grade": "عاشر",
-    "division": "ب",
-    "links": [
-      "https://drive.google.com/file/d/36mxSCi8WVrKB9n9RJdQ/view?usp=sharing",
-      "https://www.youtube.com/watch?v=mqmyHc0gHa9"
-    ],
+    "division": "",
+    "links": [],
     "notes": ""
   },
   {
-    "id": "عاشر|دلال",
-    "name": "دلال",
+    "id": "عاشر|مسك احمد عبدالله خضر +مريم علاءبشير",
+    "name": "مسك احمد عبدالله خضر +مريم علاءبشير",
     "grade": "عاشر",
-    "division": "ب",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|ملك ربيع",
+    "name": "ملك ربيع",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|ميار أحمد محمود عكه",
+    "name": "ميار أحمد محمود عكه",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|ميار أحمد محمود عكه آخر تعديل",
+    "name": "ميار أحمد محمود عكه آخر تعديل",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|ميار رائد ابراهيم ناصر",
+    "name": "ميار رائد ابراهيم ناصر",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|ميار فراس فتحي اسماعيل",
+    "name": "ميار فراس فتحي اسماعيل",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|نايا عماد فيصل ثابت",
+    "name": "نايا عماد فيصل ثابت",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|نور ابو شنار / سجى الفندي",
+    "name": "نور ابو شنار / سجى الفندي",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|نور الخضور / هيا ابو شنب",
+    "name": "نور الخضور / هيا ابو شنب",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|نور حسن محمود السخني",
+    "name": "نور حسن محمود السخني",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "عاشر|هبة عاشور ورفيف جندية",
+    "name": "هبة عاشور ورفيف جندية",
+    "grade": "عاشر",
+    "division": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "id": "ج|لينته محمد إبراهيم مشتهى الصف السابع",
+    "name": "لينته محمد إبراهيم مشتهى الصف السابع",
+    "grade": "ج",
+    "division": "https://www.canva.com/design/DAHD9NwFbc0/HoJ6RHhqC7ONdWcJeHzzSQ/watch?utm_content=DAHD9NwFbc0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0513f4a945",
     "links": [
-      "  https://drive.google.com/file/d/QJQhM3PVBg91aVGNrOlD/view?usp=sharing  ",
-      "https://www.youtube.com/watch?v=tzykPPKlaud"
+      "https://www.canva.com/design/DAHD9NwFbc0/HoJ6RHhqC7ONdWcJeHzzSQ/watch?utm_content=DAHD9NwFbc0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0513f4a945"
     ],
-    "notes": "مشروع مميز"
+    "notes": ""
   }
 ]
